@@ -1,4 +1,0 @@
-interface:
-  display_name: "AI Career Proof Mapper"
-  short_description: "Map experience to credible AI-career evidence"
-  default_prompt: "Use $ai-career-transition-planner to assess my experience for AI-related design, UX, product, or agent roles."

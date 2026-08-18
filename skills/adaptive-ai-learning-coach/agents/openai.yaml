@@ -1,4 +1,0 @@
-interface:
-  display_name: "Adaptive AI Learning Coach"
-  short_description: "Run adaptive, dialogue-first AI learning sessions"
-  default_prompt: "Use $adaptive-ai-learning-coach to begin or resume my AI learning session."

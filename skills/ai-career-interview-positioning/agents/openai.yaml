@@ -1,4 +1,0 @@
-interface:
-  display_name: "AI Career Interview Positioning"
-  short_description: "Create a proactive interview narrative and strategy"
-  default_prompt: "Use $ai-career-interview-positioning to prepare my AI career interview narrative."

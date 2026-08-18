@@ -1,4 +1,0 @@
-interface:
-  display_name: "AI Career Sprint Plan"
-  short_description: "Create a focused AI-career interview sprint"
-  default_prompt: "Use $ai-career-sprint-plan to create a focused learning sprint from my diagnosis."

@@ -1,4 +1,0 @@
-interface:
-  display_name: "AI Career Case Strategy"
-  short_description: "Turn a real project into a credible AI career case"
-  default_prompt: "Use $ai-career-case-strategy to analyze this project for my AI career transition."
