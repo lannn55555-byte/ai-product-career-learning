@@ -1,0 +1,18 @@
+# Private learner material
+*_Resume.*
+*_CV.*
+*Learning_Log*.md
+*Growth_Profile*.md
+*Handoff.private.md
+
+# Credentials and local settings
+.env
+.env.*
+*.key
+*.pem
+secrets/
+
+# Editor and operating-system files
+.DS_Store
+Thumbs.db
+.vscode/
