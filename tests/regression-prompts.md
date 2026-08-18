@@ -1,6 +1,6 @@
 # Regression prompts
 
-Use these prompts to test the skills in a new conversation before a release. Check the response against the stated expected behavior without providing the expected behavior to the Skill.
+Use these prompts to test the portable Skills in a new conversation before a release. Check the response against the stated expected behavior without providing the expected behavior to the Skill.
 
 1. **Dialogue before project**
    - Prompt: "I want to learn AI product design. Do not make me build a project first. Start by teaching me."

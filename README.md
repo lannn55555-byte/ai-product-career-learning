@@ -1,8 +1,10 @@
 # AI Product Career Learning
 
-A skills-only plugin for people who want to transition into AI-related design, UX, product, agent, or experience roles, or build AI-product knowledge systematically. It turns a learner's real background, target role requirements, and learning preferences into a personalized route, then supports dialogue-first learning with visible progress.
+A portable collection of Agent Skills for people who want to transition into AI-related design, UX, product, agent, or experience roles, or build AI-product knowledge systematically. It turns a learner's real background, target role requirements, and learning preferences into a personalized route, then supports dialogue-first learning with visible progress.
 
-## What this plugin includes
+The source of truth is the standard `skills/<skill-name>/SKILL.md` structure. This repository is not a Codex-only plugin.
+
+## What this toolkit includes
 
 | Skill | Use it for | Main output |
 |---|---|---|
@@ -47,6 +49,22 @@ The default is **Chat-first + milestone Markdown**:
 | Case strategy | Case analysis and story | Optional Case Handoff |
 | Interview positioning | Interview narrative and answers | No required handoff |
 
+## Install and use
+
+Use an Agent Skills-compatible coding agent or runtime. For tools that support `skills.sh`, install one Skill at a time, for example:
+
+```bash
+npx skills add lannn55555-byte/ai-product-career-learning --skill adaptive-ai-learning-coach
+```
+
+Choose the Skill that matches the learner's current need. A typical route is diagnosis -> sprint plan -> dialogue learning; case strategy and interview positioning are optional later stages.
+
+The repository is designed around the portable `SKILL.md` convention used by modern agent runtimes. Runtime-specific discovery, installation commands, and available file/tool access still vary by host. Verify the installed Skills in the host after installation.
+
+### Browser chat products
+
+Gemini web chat, ordinary ChatGPT web chat, and similar browser-chat products do not automatically install a repository as a persistent Skill. Use their native customization format instead (for example, a Gem or custom instructions), based on the canonical Skill instructions in this repository.
+
 ## Language and localization
 
 The canonical Skill instructions are English. The plugin replies and generates learner artifacts in the user's language. Technical terms may retain their common English acronym after a plain-language first explanation. Localized templates and documentation can be added without duplicating Skill logic.
@@ -58,19 +76,20 @@ The canonical Skill instructions are English. The plugin replies and generates l
 - Keep direct contribution, team contribution, observation, hypothesis, and prototype claims distinct.
 - Do not represent model output as verified business fact.
 
-## Plugin structure
+## Repository structure
 
 ```text
-.codex-plugin/plugin.json
 skills/
   ai-career-transition-planner/
   ai-career-sprint-plan/
   adaptive-ai-learning-coach/
   ai-career-case-strategy/
   ai-career-interview-positioning/
+tests/
+docs/
 ```
 
-This is a skills-only plugin. During development, install and test it through a local plugin marketplace. For distribution, publish the repository and then package or submit the plugin according to the host's current plugin workflow.
+Each `SKILL.md` is canonical English. Optional `agents/openai.yaml` files provide Codex UI metadata only; hosts that do not use that metadata can ignore it.
 
 ## License
 
