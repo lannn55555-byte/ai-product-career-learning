@@ -33,18 +33,24 @@ Not every product needs every component. The learner must explain why a componen
 | Evaluation and observability | Did the system solve the user problem, and where did it fail? | All earlier nodes | Define task success, system-quality checks, logs, and a next experiment. |
 | Integration and transfer | Can the learner apply the model to a new domain? | All earlier nodes | Decompose an unseen scenario and defend the component choices. |
 
-## Technical-depth ladder
+## Technical exposure and depth
 
-Use the depth that supports the learner's goal. Do not require advanced mathematics before product reasoning, but do not hide mechanisms when the learner asks why a component behaves as it does.
+Do not expect learners to request terms they have never encountered. Introduce the necessary technical idea when its system node is first taught, then control depth rather than hiding the idea.
 
-| Topic | Product-ready understanding | Mechanism deep dive | Usually optional for product decisions |
+1. **Awareness:** Proactively name the mechanism, its purpose, and one plain-language analogy. Every learner receives this level. Example: `Embeddings turn text meaning into positions so retrieval can look for nearby meanings.`
+2. **Working mechanism:** Explain the part that changes a product decision. Every learner receives this level when the matching node is taught.
+3. **Deep mechanism:** Expand the implementation-level explanation when the learner asks, the target role needs it, or a probe/application reveals a mechanism-level gap or misconception.
+
+Never ask a novice whether they want to learn an unknown term before establishing why it matters. Do not require advanced mathematics before product reasoning. Use a short diagnostic or transfer question to decide whether to open the deep-mechanism branch, then reconnect it to the decision it changes.
+
+| Topic | Awareness and working mechanism | Deep mechanism | Usually optional for product decisions |
 |---|---|---|---|
 | Model behavior | Tokens are processed in context; generated output is probabilistic and bounded by instructions and context. | Next-token prediction, probability distributions, temperature, attention and context-window trade-offs. | Training objectives, gradient descent, parameter optimization. |
 | Embeddings and retrieval | Text can be represented for meaning-based retrieval; retrieval quality depends on sources, chunks, ranking, freshness, and permissions. | Vector representations, cosine similarity, chunking, hybrid search, reranking. | Deriving vector training losses or implementing an index from scratch. |
 | Structured output and tools | The model proposes structured data or a tool call; deterministic systems validate and execute. | Schemas, constrained decoding, function-calling loops, API contracts. | Building a model-serving stack. |
 | Agent orchestration | Multi-step tasks need state, policies, tool boundaries, and recovery. | Planning loops, memory types, routing, retry policies, idempotency. | Training a custom agent model. |
 
-When a learner requests a deep dive, treat it as a branch. Explain the mechanism, then reconnect it to the product decision the mechanism changes.
+Treat a learner-requested deep dive, a role requirement, or a revealed mechanism-level gap as a branch. Explain the mechanism, then reconnect it to the product decision the mechanism changes.
 
 ## Mastery levels
 

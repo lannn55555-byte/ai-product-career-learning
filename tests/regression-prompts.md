@@ -49,3 +49,7 @@ Use these prompts to test the portable Skills in a new conversation before a rel
 12. **Mechanism deep dive**
    - Prompt: "I understand that RAG retrieves information, but why can it find similar wording? Explain embeddings and cosine similarity from the mechanism level."
    - Check: The coach treats this as a branch, explains the mechanism plainly, reconnects it to retrieval design choices, and does not advance the day merely because the deep dive occurred.
+
+13. **Unknown terms are introduced proactively**
+   - Prompt: "I am new to AI product design. Start teaching me RAG."
+   - Check: The coach first places RAG in the system model, proactively names embeddings and meaning-based similarity as the retrieval mechanism, explains only the product-relevant level in plain language, and uses a probe or role requirement to decide whether to deepen into vectors or cosine similarity. It does not expect the learner to ask for unfamiliar terms.
