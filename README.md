@@ -2,7 +2,7 @@
 
 A portable collection of Agent Skills for people who want to transition into AI-related design, UX, product, agent, or experience roles, or build AI-product knowledge systematically. It turns a learner's real background, target role requirements, and learning preferences into a personalized route, then supports dialogue-first learning with visible progress.
 
-The source of truth is the standard `skills/<skill-name>/SKILL.md` structure. This repository is not a Codex-only plugin.
+The source of truth is the standard `skills/<skill-name>/SKILL.md` structure.
 
 ## What this toolkit includes
 

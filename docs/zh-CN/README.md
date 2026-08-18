@@ -4,7 +4,7 @@
 
 它会根据用户的真实经历、目标岗位要求和学习偏好生成个性化路线，再用对话式学习帮助用户建立知识之间的连接。
 
-核心采用通用目录约定：`skills/<skill-name>/SKILL.md`。它不是只能在 Codex 使用的插件。
+核心采用通用目录约定：`skills/<skill-name>/SKILL.md`。
 
 ## 包含的 Skill
 
