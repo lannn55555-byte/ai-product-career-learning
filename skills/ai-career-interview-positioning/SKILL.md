@@ -33,4 +33,4 @@ Return only:
 5. Targeted answers for five likely questions.
 6. Three questions to ask the interviewer.
 
-Present the first draft in chat for collaboration. Create an editable interview-preparation Markdown file only when the user accepts it or requests an artifact. Do not turn text answers into visual cards unless the user needs a comparison or memory aid.
+Present the first draft in chat for collaboration. Create an editable interview-preparation Markdown file only when the user accepts it or requests an artifact. If the host has no writable workspace, return it as a clearly named copyable Markdown block. When the user requests a time-boxed interview sprint, use the matching-language [English template](templates/en/interview-sprint-plan.md) or [Chinese template](templates/zh-CN/interview-sprint-plan.md). Do not turn text answers into visual cards unless the user needs a comparison or memory aid.

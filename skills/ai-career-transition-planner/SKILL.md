@@ -7,7 +7,7 @@ description: Analyze a professional's real experience and recommend a primary AI
 
 ## Scope
 
-Run the core career diagnosis only. Return role-direction analysis, evidence, domain assets, gaps, one shareable Career Proof Map, and one suggested next action. Do not create a study plan, deep-dive a case, or write interview answers unless the user explicitly asks.
+Run the core career diagnosis only. Return role-direction analysis, evidence, domain assets, gaps, one shareable Career Proof Map, and one suggested next action. Do not create a study plan, deep-dive a case, or write interview answers unless the user explicitly asks. Read [references/diagnosis-quality-rubric.md](references/diagnosis-quality-rubric.md) before finalizing.
 
 Reply in the user's language. Preserve factual integrity: distinguish direct contribution, team contribution, observation, hypothesis, and personal prototype. Never invent ownership, metrics, launch results, or a target role the user did not support.
 
@@ -64,9 +64,9 @@ Identify whether the user can explain:
 
 Do not call data "RAG-ready" without checking source of truth, freshness, permissions, and task need.
 
-### 4. Create a Career Proof Map
+### 4. Create a Career Proof Map and diagnosis artifact
 
-Use [templates/ai-career-proof-map.md](templates/ai-career-proof-map.md). Keep it to one screen or printed page when possible. Include only:
+Use the matching-language templates: [English diagnosis template](templates/en/career-diagnosis.md), [Chinese diagnosis template](templates/zh-CN/career-diagnosis.md), [English proof map](templates/en/ai-career-proof-map.md), or [Chinese proof map](templates/zh-CN/ai-career-proof-map.md). Create a diagnosis artifact only after the user confirms that they want a milestone document. Keep the proof map to one screen or printed page when possible. Include only:
 
 - primary role direction and score type;
 - positioning statement;
@@ -80,19 +80,19 @@ Do not make it decorative. Every element must link to factual evidence or a clea
 
 Choose exactly one next action and ask for confirmation before expanding:
 
-- Need a personalized learning route → `$ai-career-sprint-plan`.
-- Need to turn one real project into evidence → `$ai-career-case-strategy`.
-- Need to prepare for a specific interview → `$ai-career-interview-positioning`.
+- Need a personalized learning route → `ai-career-sprint-plan`.
+- Need to turn one real project into evidence → `ai-career-case-strategy`.
+- Need to prepare for a specific interview → `ai-career-interview-positioning`.
 
 ### 6. Create a verified Learning Handoff
 
-When the next action is learning, use [templates/learning-handoff.md](templates/learning-handoff.md). Fill it only with diagnosis facts and the user's stated preferences. Show the concise card to the user for correction, then save it in the workspace for the next Skill.
+When the next action is learning, use the matching-language [English Learning Handoff](templates/en/learning-handoff.md) or [Chinese Learning Handoff](templates/zh-CN/learning-handoff.md). Fill it only with diagnosis facts and the user's stated preferences. Show the concise card to the user for correction. Save it in a writable workspace when available; otherwise return it in a clearly named Markdown block that the user can copy into their preferred record.
 
 The handoff is shared, user-verifiable state, not hidden reasoning. Do not pass a raw conversation transcript or invent missing fields.
 
 ## Presentation Contract
 
-Present the diagnosis in chat first, using compact headings and tables when useful. After the learner confirms a stage, create or update an editable Markdown artifact only when their output mode includes milestone documents. Use a visual card or diagram only when it clarifies a map, comparison, or relationship better than text; never replace editable facts with an image.
+Present the diagnosis in chat first, using compact headings and tables when useful. After the learner confirms a stage, create or update an editable Markdown artifact only when their output mode includes milestone documents. If the host has no writable workspace, return a copyable Markdown block instead. Use a visual card or diagram only when it clarifies a map, comparison, or relationship better than text; never replace editable facts with an image.
 
 ## Output
 

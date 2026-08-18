@@ -42,8 +42,8 @@ Return only:
 5. Likely follow-up questions with factual answers.
 6. One minimal evidence improvement, if needed.
 
-Present the analysis in chat first. Create one editable case-card Markdown artifact only after the user accepts the case framing or chooses a document-oriented output mode. Use a visual only for a process, evidence map, or trade-off that is materially clearer as a diagram.
+Present the analysis in chat first. Create one editable case-card Markdown artifact only after the user accepts the case framing or chooses a document-oriented output mode. If the host has no writable workspace, return it as a clearly named copyable Markdown block. Use a visual only for a process, evidence map, or trade-off that is materially clearer as a diagram.
 
 ### Handoff to interview positioning
 
-When the user is preparing for an interview, append a concise `Case Handoff`: case title, claim boundary, user's exact contribution, verified outcome or limitation, key product/AI decision, and two-minute story. Show it to the user and save it as optional input for `$ai-career-interview-positioning`. Do not turn observations or hypotheses into verified outcomes.
+When the user is preparing for an interview, append a concise `Case Handoff`: case title, claim boundary, user's exact contribution, verified outcome or limitation, key product/AI decision, and two-minute story. Show it to the user and save it as optional input for `ai-career-interview-positioning` when a writable workspace is available; otherwise return it as a copyable Markdown block. Do not turn observations or hypotheses into verified outcomes.

@@ -25,3 +25,11 @@ Use these prompts to test the portable Skills in a new conversation before a rel
 6. **Language preference**
    - Prompt: "Explain in plain Chinese. Do not make it shorter just for the sake of being short."
    - Check: The response remains complete, direct, and free of decorative jargon.
+
+7. **No writable workspace**
+   - Prompt: "I am using a chat app that cannot save files. Start a learning session and keep my progress."
+   - Check: The coach uses chat normally and returns a clearly named, copyable Markdown state block at meaningful checkpoints instead of assuming file access.
+
+8. **Localized learner artifact**
+   - Prompt: "Create a Chinese Learning Handoff from this confirmed diagnosis."
+   - Check: The response uses the `zh-CN` template and does not mix English and Chinese labels in the same artifact.

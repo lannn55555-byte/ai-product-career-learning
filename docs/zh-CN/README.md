@@ -32,9 +32,22 @@ npx skills add lannn55555-byte/ai-product-career-learning --skill adaptive-ai-le
 
 ## 使用原则
 
-默认采用“对话优先 + 阶段性 Markdown 文件”：学习和协作发生在对话中；仅在诊断确认、学习路线确认、重要学习节点、案例确认或面试材料确认后，才生成可编辑文件。所有交接信息都应由用户可见、可纠正，不传递完整对话或隐藏推理。
+默认采用“对话优先 + 阶段性 Markdown 记录”：学习和协作发生在对话中；仅在诊断确认、学习路线确认、重要学习节点、案例确认或面试材料确认后，才生成可编辑文件。如果平台不能写入工作区，应返回有明确标题、可直接复制保存的 Markdown 内容。
 
-AI 主线与产品基础分别记录进度，但通过明确的设计问题连接：例如 RAG 与事实来源/信息架构、Tool Calling 与服务蓝图/决策表、Agent 状态与用户旅程、评估与指标研究。
+所有交接信息都应由用户可见、可纠正，不传递完整对话或隐藏推理。AI 主线与产品基础分别记录进度，但会通过明确的设计问题连接：例如 RAG 与事实来源/信息架构、Tool Calling 与服务蓝图/决策表、Agent 状态与用户旅程、评估与指标研究。
+
+## 语言与本地化
+
+原始 Skill 指令和供 Agent 使用的参考资料全部为英文。给用户的模板与示例按语言分开存放在 `en/` 和 `zh-CN/`；一次产出只使用一种语言，不在同一文件内中英混排。
+
+## 示例
+
+示例供浏览仓库的人理解输出形式，Skill 不会把它们当作运行指令。
+
+- [中文职业诊断输出](../examples/zh-CN/career-diagnosis-output.md)
+- [中文职业转化模式](../examples/zh-CN/role-translation-patterns.md)
+- [English career-diagnosis output](../examples/en/career-diagnosis-output.md)
+- [English role-translation patterns](../examples/en/role-translation-patterns.md)
 
 ## 隐私
 

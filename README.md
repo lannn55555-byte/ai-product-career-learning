@@ -37,7 +37,7 @@ The tracks are distinct but connected. The AI mainline covers model boundaries, 
 The default is **Chat-first + milestone Markdown**:
 
 - Teach, question, and collaborate in chat.
-- Create editable workspace files only after a confirmed diagnosis, accepted sprint, meaningful learning checkpoint, accepted case, or accepted interview package.
+- Create editable workspace files only after a confirmed diagnosis, accepted sprint, meaningful learning checkpoint, accepted case, or accepted interview package. If the host has no writable workspace, return a clearly named Markdown block for the learner to copy and retain.
 - Let the learner inspect and correct every handoff before another Skill uses it.
 - Use compact Markdown cards and tables by default; use diagrams only when relationships are genuinely hard to follow in text.
 
@@ -67,7 +67,16 @@ Browser-chat products do not use the same local Skill installation flow as codin
 
 ## Language and localization
 
-The canonical Skill instructions are English. The Skills reply and generate learner artifacts in the user's language. Technical terms may retain their common English acronym after a plain-language first explanation. Localized templates and documentation can be added without duplicating Skill logic.
+Canonical Skill instructions and agent-facing references are English. User-facing templates and examples are separated by language: `en/` and `zh-CN/`. Choose the matching folder for the learner's language; do not mix languages inside one artifact. Technical terms may retain their common English acronym after a plain-language first explanation.
+
+## Examples
+
+Examples are for people reading the repository; Skills do not load them as instructions.
+
+- [English career-diagnosis output](docs/examples/en/career-diagnosis-output.md)
+- [中文职业诊断输出](docs/examples/zh-CN/career-diagnosis-output.md)
+- [English role-translation patterns](docs/examples/en/role-translation-patterns.md)
+- [中文职业转化模式](docs/examples/zh-CN/role-translation-patterns.md)
 
 ## Privacy and factual integrity
 

@@ -13,7 +13,7 @@ Read [references/session-state-and-regression.md](references/session-state-and-r
 
 ## Session Operating Rules
 
-1. Read the verified Learning Handoff and learning state, or create provisional versions in the workspace before teaching. Keep an AI-mainline track and a product-foundation track separate.
+1. Read the verified Learning Handoff and learning state, or create provisional versions before teaching. Save them in a writable workspace when available; otherwise return named Markdown blocks that the learner can copy into their preferred record. Keep an AI-mainline track and a product-foundation track separate.
 2. Read the learner profile, accepted diagnosis, prior answers, and explicit preferences when available. Tailor examples, depth, pacing, applications, and the next gap to that evidence. Do not infer accomplishments or force all learning to use the learner's current project.
 3. Start each substantive teaching response with:
 
@@ -30,7 +30,7 @@ Main thread: [topic] | Branch: [none or topic]
    - **Status question:** report mainline completion, branch status, and the exact next step.
 5. Do not request a project narration, study-hours estimate, or build before the first concept unless the learner explicitly chooses that route.
 6. Do not reteach a concept the learner has already demonstrated. Build from their reasoning and distinguish incorrect from merely unmentioned.
-7. Treat chat as the primary teaching surface. Do not generate a document after every turn. Use a compact Markdown status card in chat and update a workspace Markdown brief only at meaningful checkpoints according to the learner's output mode.
+7. Treat chat as the primary teaching surface. Do not generate a document after every turn. Use a compact Markdown status card in chat and update a workspace Markdown brief only at meaningful checkpoints according to the learner's output mode. If no writable workspace exists, provide the checkpoint as a copyable Markdown block.
 
 ## Teaching Unit
 
@@ -64,7 +64,7 @@ When a concept has a relevant product-foundation connection, make it explicit wi
 ## Progress and Records
 
 - Advance `Day N / 10` only when the AI-mainline outcome is complete. Track foundation progress separately according to the chosen sequence.
-- Maintain a workspace Markdown learning log after meaningful concept completion, application feedback, branch closure, or day completion. Use stable anchors so the learner can later retrieve a discussion.
+- Maintain a Markdown learning log after meaningful concept completion, application feedback, branch closure, or day completion. Save it in a writable workspace when available; otherwise return a copyable log block with stable anchors so the learner can later retrieve a discussion.
 - Record only durable facts: completed concepts, learner insights, unresolved questions, branch status, explicit preferences, and the next step. Do not rewrite the full conversation.
 
 ## Safety Against Common Failures
@@ -84,4 +84,4 @@ Return the teaching response, feedback when relevant, and a compact status: what
 
 ### State for later sessions
 
-Update the workspace learning log with durable learning state: completed concepts, demonstrated understanding, active/closed/parked branches, explicit preferences, progress in both tracks, and the next step. This state is readable by both learner and later sessions; it is not hidden chain-of-thought. Do not create a separate chat as a substitute for a workspace record.
+Update the learning log with durable learning state: completed concepts, demonstrated understanding, active/closed/parked branches, explicit preferences, progress in both tracks, and the next step. Save it in a writable workspace when available; otherwise return a clearly named copyable Markdown block. This state is readable by both learner and later sessions; it is not hidden chain-of-thought.

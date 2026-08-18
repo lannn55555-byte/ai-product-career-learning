@@ -7,7 +7,7 @@ description: Plan a personalized AI-career learning sprint from a verified Learn
 
 ## Scope
 
-Create the learning route and initialize durable learning state. Do not teach the lessons, force a project, or turn the first interaction into a task interview. Actual multi-turn teaching belongs to `$adaptive-ai-learning-coach`.
+Create the learning route and initialize durable learning state. Do not teach the lessons, force a project, or turn the first interaction into a task interview. Actual multi-turn teaching belongs to `adaptive-ai-learning-coach`.
 
 Read a verified Learning Handoff when available. Otherwise use the accepted diagnosis and relevant learner information: target role, experience, domain assets, AI-specific gaps, prior familiarity, target JD, public-project constraints, learning preferences, and accessibility preferences. Do not repeat the full diagnosis or ask for information already available. If no diagnosis exists, create a provisional route, label its assumptions, and create a provisional handoff for later recalibration.
 
@@ -65,10 +65,10 @@ Return:
 ```
 
 5. A learning-state initialization section.
-6. One handoff to `$adaptive-ai-learning-coach`.
+6. One handoff to `adaptive-ai-learning-coach`.
 
-Present the route in chat first. When the learner selects `Chat-first + milestone Markdown` or `Document-first`, save one editable sprint-plan file after the route is accepted. Do not create a separate file for every lesson. Use a compact table or progress card for track comparison; use a diagram only when it clarifies cross-track dependencies.
+Present the route in chat first. When the learner selects `Chat-first + milestone Markdown` or `Document-first`, save one editable sprint-plan file after the route is accepted. If the host has no writable workspace, return one clearly named Markdown block for the learner to copy and retain. Do not create a separate file for every lesson. Use a compact table or progress card for track comparison; use a diagram only when it clarifies cross-track dependencies.
 
 ### State for the next Skill
 
-Save or update a workspace learning state. Show it briefly to the learner, then let `$adaptive-ai-learning-coach` read it. Include only: verified Learning Handoff summary, selected track sequence, AI-mainline and foundation maps/progress, active day, branch status, completed outcomes, unresolved questions, and one next step. Do not pass the full diagnosis or raw conversation by default.
+Save or update a workspace learning state when possible. Otherwise return a named, copyable learning-state Markdown block. Show it briefly to the learner, then make it available to `adaptive-ai-learning-coach`. Include only: verified Learning Handoff summary, selected track sequence, AI-mainline and foundation maps/progress, active day, branch status, completed outcomes, unresolved questions, and one next step. Do not pass the full diagnosis or raw conversation by default.

@@ -2,7 +2,7 @@
 
 ## Learning state
 
-Maintain the following in the learner's workspace log:
+Maintain the following in the learner's workspace log when the host can write files. Otherwise return it as a clearly named Markdown block that the learner can copy into their own record:
 
 ```text
 AI mainline: Day N / 10; current section; completed outcome
