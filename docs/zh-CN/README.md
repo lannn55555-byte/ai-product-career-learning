@@ -28,7 +28,7 @@ npx skills add lannn55555-byte/ai-product-career-learning --skill adaptive-ai-le
 
 ## 网页聊天产品
 
-Gemini 网页版、普通 ChatGPT 网页版等不会因为输入仓库链接就把它长期安装为 Skill。它们可以导入仓库用于一次性阅读，或将此仓库的核心指令转换为 Gem、自定义指令等平台原生形式。
+网页聊天产品不会使用与编码 Agent 相同的本地 Skill 安装流程。可使用平台原生的定制形式，例如 Gem 或自定义指令。GitHub 链接有时只能提供临时阅读上下文，具体行为取决于平台。
 
 ## 使用原则
 

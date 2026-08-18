@@ -59,15 +59,15 @@ npx skills add lannn55555-byte/ai-product-career-learning --skill adaptive-ai-le
 
 Choose the Skill that matches the learner's current need. A typical route is diagnosis -> sprint plan -> dialogue learning; case strategy and interview positioning are optional later stages.
 
-The repository is designed around the portable `SKILL.md` convention used by modern agent runtimes. Runtime-specific discovery, installation commands, and available file/tool access still vary by host. Verify the installed Skills in the host after installation.
+Each Skill is self-contained. Discovery, installation commands, and available file or tool access vary by host, so verify that the host has found the installed Skill.
 
 ### Browser chat products
 
-Gemini web chat, ordinary ChatGPT web chat, and similar browser-chat products do not automatically install a repository as a persistent Skill. Use their native customization format instead (for example, a Gem or custom instructions), based on the canonical Skill instructions in this repository.
+Browser-chat products do not use the same local Skill installation flow as coding agents. Use the host's native customization format where available (for example, a Gem or custom instructions). A GitHub link may provide temporary reading context, but its behavior varies by host.
 
 ## Language and localization
 
-The canonical Skill instructions are English. The plugin replies and generates learner artifacts in the user's language. Technical terms may retain their common English acronym after a plain-language first explanation. Localized templates and documentation can be added without duplicating Skill logic.
+The canonical Skill instructions are English. The Skills reply and generate learner artifacts in the user's language. Technical terms may retain their common English acronym after a plain-language first explanation. Localized templates and documentation can be added without duplicating Skill logic.
 
 ## Privacy and factual integrity
 
@@ -89,7 +89,7 @@ tests/
 docs/
 ```
 
-Each `SKILL.md` is canonical English. Optional `agents/openai.yaml` files provide Codex UI metadata only; hosts that do not use that metadata can ignore it.
+Each `SKILL.md` is canonical English.
 
 ## License
 
