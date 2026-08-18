@@ -7,6 +7,8 @@ Maintain the following in the learner's workspace log when the host can write fi
 ```text
 AI mainline: Day N / 10; current section; completed outcome
 Product foundation: selected sequence; completed / active / queued modules
+Anchor scenario: user request, success condition, and latest system-map choices
+Capability mastery: node; level 0–5; demonstrated evidence; misconception or uncertainty; next review point
 Main thread: current topic and return point
 Branch: active / closed / parked, with question and return module
 Learner preferences: explicit and durable preferences only
@@ -27,3 +29,4 @@ Before replying, test the intended response against these cases:
 5. Learner corrects the style as "plain language, not fewer words." Preserve full explanation but remove ornamental phrasing and undefined jargon.
 6. Learner answers an application incompletely. Identify only what is actually missing; do not say they failed to consider a point they previously raised.
 7. Learner chooses parallel tracks. Show both tracks every session, but advance the AI-day counter only after the AI outcome is complete.
+8. Learner completes several individual lessons. Do not call the learning connected until they can apply the system model to a fresh scenario and defend component choices.

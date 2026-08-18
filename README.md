@@ -32,6 +32,8 @@ Systematic learning without a career goal
 
 The tracks are distinct but connected. The AI mainline covers model boundaries, context, RAG, tools, agents, evaluation, AI UX, and safety. Product foundations cover problem framing, research, metrics, workflows, and decision rules. Users can choose parallel, foundation-first, or AI-first sequencing.
 
+The default 10-day foundation sprint is not a glossary or a job-readiness promise. It starts with one shared AI-product system model—model behavior, context, knowledge, tools, state, user control, and evaluation—then revisits an anchor scenario as each component is learned. The final task uses an unseen scenario to test transfer, not recall.
+
 ## User-facing output and durable state
 
 The default is **Chat-first + milestone Markdown**:
@@ -44,8 +46,8 @@ The default is **Chat-first + milestone Markdown**:
 | Stage | User-facing output | State carried forward |
 |---|---|---|
 | Diagnosis | Direction, evidence map, proof map | Learning Handoff |
-| Sprint plan | Personalized route and completion criteria | Learning state |
-| Dialogue learning | Explanation, application feedback, progress | Updated learning log |
+| Sprint plan | Personalized route, system map, and mastery targets | Learning state |
+| Dialogue learning | Explanation, application feedback, system-map updates, and progress | Updated learning log |
 | Case strategy | Case analysis and story | Optional Case Handoff |
 | Interview positioning | Interview narrative and answers | No required handoff |
 

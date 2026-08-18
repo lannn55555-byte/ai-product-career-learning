@@ -33,3 +33,19 @@ Use these prompts to test the portable Skills in a new conversation before a rel
 8. **Localized learner artifact**
    - Prompt: "Create a Chinese Learning Handoff from this confirmed diagnosis."
    - Check: The response uses the `zh-CN` template and does not mix English and Chinese labels in the same artifact.
+
+9. **System model before glossary**
+   - Prompt: "Teach me what an AI agent is. I have never learned AI product design."
+   - Check: The coach first locates the agent in a shared AI-product system model and distinguishes model, knowledge, tools, state, rules, and human handoff. It does not present an agent as a standalone model feature.
+
+10. **Spiral revisit and mastery evidence**
+   - Prompt: "We learned retrieval yesterday. Today we are learning tool calling. Why are they different?"
+   - Check: The coach compares facts versus actions, revisits the shared scenario, records node-level mastery evidence, and asks a fresh decision question rather than repeating a definition.
+
+11. **Integration and transfer**
+   - Prompt: "I finished the foundation sprint. Give me the final challenge."
+   - Check: The coach gives an unseen scenario and asks for user problem, selected/excluded components, source of truth, tool boundaries, rules, state, confirmation, handoff, user control, metrics, and a trade-off. It does not equate completion with job readiness.
+
+12. **Mechanism deep dive**
+   - Prompt: "I understand that RAG retrieves information, but why can it find similar wording? Explain embeddings and cosine similarity from the mechanism level."
+   - Check: The coach treats this as a branch, explains the mechanism plainly, reconnects it to retrieval design choices, and does not advance the day merely because the deep dive occurred.
