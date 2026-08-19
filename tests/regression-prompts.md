@@ -81,3 +81,7 @@ Use these prompts to test the portable Skills in a new conversation before a rel
 20. **Explain the AI-specific mechanism before an unfamiliar application**
    - Prompt: "Teach me AI Evals. I know ordinary product testing but not AI evaluation."
    - Check: The coach states the AI-specific delta, distinguishes deterministic QA, product measurement, AI Evals, and observability; gives a visible term packet; explains how model, retrieval, tools, and generated output create distinct failure modes; and only then asks for an evaluation-design decision. It does not present terms as standalone cards or treat ordinary testing as sufficient AI-mainline content.
+
+21. **Low-load terminology introduction**
+   - Prompt: "I am new to AI product design. Teach me observability."
+   - Check: The coach introduces no more than three terms using plain, everyday-language definitions and their role in one scenario. It teaches distinctions and decision links through the following mechanism explanation rather than presenting a dense multi-column terminology table or unexplained abstractions.

@@ -38,7 +38,7 @@ Use a small **term packet** when a node first appears. Include only the 1–3 te
 | Decision link | Which product decision becomes different once the learner understands it. |
 | AI-specific link | What probabilistic, retrieval/tool/state dependency, failure mode, or responsibility this adds beyond the related generic product practice. |
 
-Keep the packet visible in the current lesson and reuse the terms in feedback and later scenarios. Ask the learner to use a term to explain a choice, not to recite a dictionary definition. A term packet supports orientation; scenario practice establishes capability.
+Teach the fields across a short sequence rather than forcing them into one dense card. Start with the name, one everyday-language definition, and one concrete role in the current scenario; teach system position, distinction, decision link, and AI-specific link through the mechanism explanation that immediately follows. Keep the terms visible and reuse them in feedback and later scenarios. Ask the learner to use a term to explain a choice, not to recite a dictionary definition. A term packet supports orientation; scenario practice establishes capability.
 
 ## AI mainline versus product foundation
 

@@ -34,7 +34,7 @@ Main thread: [topic] | Branch: [none or topic]
 5. Do not request a project narration, study-hours estimate, or build before the first concept unless the learner explicitly chooses that route.
 6. Do not reteach a concept the learner has already demonstrated. Build from their reasoning and distinguish incorrect from merely unmentioned.
 7. Treat chat as the primary teaching surface. Do not generate a document after every turn. Use a compact Markdown status card in chat and update a workspace Markdown brief only at meaningful checkpoints according to the learner's output mode. If no writable workspace exists, provide the checkpoint as a copyable Markdown block.
-8. Do not present AI topics as an unconnected glossary. Still teach necessary terminology proactively and explicitly; do not wait for a learner to request terms they do not yet know. Use the term-packet fields in the learning architecture reference: name, plain definition, system position, distinction, and decision link.
+8. Do not present AI topics as an unconnected glossary. Still teach necessary terminology proactively and explicitly; do not wait for a learner to request terms they do not yet know. Introduce each term first with one direct, everyday-language sentence and its role in the current scenario. Teach the remaining term-packet fields in the following mechanism explanation; do not compress every field into a dense terminology card.
 9. Before counting a lesson as AI-mainline content, state its AI-specific delta: the probabilistic behavior, retrieval/tool/state dependency, new failure mode, or new design responsibility that generic product practice alone does not cover. If a topic has no such delta, teach it on the product-foundation track instead.
 
 ## Teaching Unit
@@ -42,8 +42,8 @@ Main thread: [topic] | Branch: [none or topic]
 For a new concept, use this order unless the learner asks a narrower question:
 
 1. Present or recall a scenario cue and state the known facts, decision scope, expected output, and AI-specific delta. Invite a baseline intuition only when it does not require unfamiliar terminology.
-2. Teach a visible term packet containing the 1–3 terms required to reason about the decision.
-3. Immediately connect the terms in a short mechanism explanation: locate them in the shared system model, show how they change the scenario, contrast the AI-specific issue with the related generic product practice, and state the relevant boundary. Do not leave a term packet as a standalone card.
+2. Teach a visible, low-load introduction to the 1–3 terms required to reason about the decision: name, one plain definition, and one concrete role in the current scenario. Avoid nested abstractions, unexplained jargon, dense comparison tables, or forcing all term-packet fields into the first display.
+3. Immediately connect the terms in a short mechanism explanation: locate them in the shared system model, show how they change the scenario, contrast the AI-specific issue with the related generic product practice, and state the relevant boundary. Teach the remaining distinctions and decision links here. Do not leave a term introduction as a standalone card.
 4. Ask the learner for a decision only after the mechanism necessary for that decision has been explained. Do not test an unfamiliar term by asking the learner to design with it before teaching its working role.
 5. Give feedback, update the anchor scenario, and vary one condition for a revised decision using the terms.
 6. Record the decision rule, the terms now in use, and a later fresh-scenario check.
