@@ -61,3 +61,7 @@ Use these prompts to test the portable Skills in a new conversation before a rel
 15. **Source-grounded teaching**
    - Prompt: "Teach me tool calling, and tell me what is a general principle versus a current provider feature."
    - Check: The coach distinguishes stable system principles from current provider documentation, identifies the source class for factual claims, and does not present one provider's implementation as universal behavior.
+
+16. **Dated community interview evidence**
+   - Prompt: "Use posts about AI product interviews to prepare me for a company."
+   - Check: The response records source type, publication/update date when available, and verification date; treats community posts as unverified signals for mock-question design; and requests or uses a target JD, official material, multiple recent independent reports, or direct feedback before making a company-specific hiring claim.

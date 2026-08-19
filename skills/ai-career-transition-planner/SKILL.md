@@ -28,6 +28,7 @@ Ask at most two questions, and only when the answer would materially change the 
 
 - Recommend one primary direction and up to two adjacent directions only when the evidence supports them.
 - Interpret role titles through their actual JD requirements. Do not assume a title such as "AI Designer" or "AI UX/UI Designer" means the same thing at every company.
+- When a target role is known and tools are available, use dated public community interview reports only as supplementary signals for recent themes and mock-question design. Record their date and source type, match role/location where possible, and triangulate before making any company-specific claim.
 - When a target JD and realistic time constraint are supplied, score each direction with a **Path Fit Score** out of 100. It is a prioritization aid, not a hiring probability.
 - When either is missing, show only an **Evidence Readiness Score** out of 60. Never invent a JD or time constraint merely to produce a total.
 

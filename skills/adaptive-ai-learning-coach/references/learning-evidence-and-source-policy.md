@@ -22,6 +22,7 @@ Definitions, diagrams, and source reading support this loop; they do not complet
 | Risk and system practice | Safety, governance, evaluation, and lifecycle questions | Prefer standards bodies and research, then adapt to the actual product context. | [NIST AI RMF](https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-ai-rmf-10); [NIST Generative AI Profile](https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf) |
 | Current platform behavior | API schemas, model features, pricing, limits, and provider-specific workflows | Use the provider's current official documentation and record its access date. Never generalize it to all providers without support. | [Function calling](https://developers.openai.com/api/docs/guides/function-calling); [File search](https://developers.openai.com/api/docs/guides/tools-file-search); [Structured outputs](https://developers.openai.com/api/docs/guides/structured-outputs); [Evals](https://developers.openai.com/api/docs/guides/evals) |
 | Role evidence | What a learner needs for a particular job family | Prefer supplied target JDs, portfolio requirements, and interview feedback. Date and label job-market samples. | User-provided JD, recruiter feedback, public job posting |
+| Community and open evidence | Recent interview themes, practitioner vocabulary, and scenario ideas | Treat as a dated, unverified signal. Triangulate before making a hiring claim; never use it alone for technical fact or company policy. | Forum discussion, public interview report, practitioner post |
 | Learning-method evidence | Teaching and assessment design | Prefer educational research; do not overstate what one study proves. | [Karpicke & Blunt (2011)](https://pubmed.ncbi.nlm.nih.gov/21252317/) on retrieval practice and meaningful learning |
 | Learner evidence | Personalization and mastery decisions | Treat the learner's verified experience and scenario answers as the primary source. | Confirmed background, prior answer, artefact, feedback |
 
@@ -39,10 +40,13 @@ Definitions, diagrams, and source reading support this loop; they do not complet
 ## Selection and update rules
 
 1. Start with the capability node and decision the learner must make; do not start from a fashionable term or one vendor's feature.
-2. Mark claims as **stable**, **current**, **role-specific**, or **learner-specific**. Verify current claims when tools are available; otherwise label them as needing verification.
+2. Record every non-trivial source as: URL or citation, source class, publication/update date when available, and verification date. Mark claims as **stable**, **current**, **role-specific**, **community signal**, or **learner-specific**.
 3. When a provider source conflicts with a stable foundation, teach the distinction: the provider document describes one implementation; it does not replace the underlying principle.
 4. Use no source merely to make a lesson look authoritative. State what the source changes in the learner's design decision.
-5. Maintain a short, versioned source list. Review current-platform links before a release or when the learner relies on a product claim.
+5. Verify platform behavior, model availability, pricing, limits, policies, and APIs on the day the claim is used when tools are available. Do not reuse an old summary as current fact.
+6. Prefer recent role-market and community evidence. If an item is older than the learner's target hiring cycle, has no date, or conflicts with a newer primary source, label it historical/low-confidence or exclude it.
+7. Use community evidence to create scenario practice, identify hypotheses, or ask better follow-up questions. Require a target JD, official company material, multiple independent recent reports, or direct interview feedback before stating a company-specific interview expectation.
+8. Maintain a short, versioned source list. Review current-platform links before a release or when the learner relies on a product claim.
 
 ## Teaching sequence
 
