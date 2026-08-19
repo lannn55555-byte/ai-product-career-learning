@@ -34,6 +34,8 @@ The tracks are distinct but connected. The AI mainline covers model boundaries, 
 
 The default 10-day foundation sprint is not a glossary or a job-readiness promise. It explicitly teaches the names, definitions, boundaries, and system roles of necessary terms, then uses them in scenarios. It starts with one shared AI-product system model—model behavior, context, knowledge, tools, state, user control, and evaluation—then revisits an anchor scenario as each component is learned. It prioritizes procedural capability: notice a cue, choose an action, explain the boundary, and revise the action when conditions change. The final task uses an unseen scenario to test transfer, not recall.
 
+Every AI-mainline lesson identifies its AI-specific delta before teaching: a model, retrieval, tool, or state mechanism; a new failure mode; or a new design responsibility beyond the paired product-foundation practice. General product, UX, metrics, and QA lessons stay on the product-foundation track unless that delta is explicit. The evaluation module distinguishes deterministic QA, product measurement, AI Evals, and live-request observability.
+
 Lesson-source selection and factual-claim rules live in [the learning evidence and source policy](skills/adaptive-ai-learning-coach/references/learning-evidence-and-source-policy.md).
 
 Application prompts state known facts, decision scope, and expected output. Feedback preserves a learner's stated qualifiers and treats extra edge cases as follow-up depth unless they change the current conclusion.

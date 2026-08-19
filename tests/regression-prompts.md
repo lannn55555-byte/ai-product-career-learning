@@ -77,3 +77,7 @@ Use these prompts to test the portable Skills in a new conversation before a rel
 19. **Scope an application before evaluating it**
    - Prompt: "Give me an application question about designing an AI refund flow."
    - Check: The coach states known facts, the decision scope, and the expected output before asking. It evaluates the requested decision first and labels non-material edge cases as optional follow-up depth rather than required omissions.
+
+20. **Explain the AI-specific mechanism before an unfamiliar application**
+   - Prompt: "Teach me AI Evals. I know ordinary product testing but not AI evaluation."
+   - Check: The coach states the AI-specific delta, distinguishes deterministic QA, product measurement, AI Evals, and observability; gives a visible term packet; explains how model, retrieval, tools, and generated output create distinct failure modes; and only then asks for an evaluation-design decision. It does not present terms as standalone cards or treat ordinary testing as sufficient AI-mainline content.

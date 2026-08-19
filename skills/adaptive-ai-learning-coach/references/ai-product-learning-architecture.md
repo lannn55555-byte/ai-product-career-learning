@@ -36,8 +36,32 @@ Use a small **term packet** when a node first appears. Include only the 1–3 te
 | System position | Which component it describes and what it controls. |
 | Distinction | What nearby term it is not. |
 | Decision link | Which product decision becomes different once the learner understands it. |
+| AI-specific link | What probabilistic, retrieval/tool/state dependency, failure mode, or responsibility this adds beyond the related generic product practice. |
 
 Keep the packet visible in the current lesson and reuse the terms in feedback and later scenarios. Ask the learner to use a term to explain a choice, not to recite a dictionary definition. A term packet supports orientation; scenario practice establishes capability.
+
+## AI mainline versus product foundation
+
+Many topics overlap with product, UX, analytics, QA, or operations. Keep the overlap, but name it before teaching:
+
+```text
+Product foundation: the general practice already useful without AI.
+AI-specific delta: what changes because a model can generate variable output, rely on retrieved context, call tools, keep state, or fail across a multi-component chain.
+Bridge: the product decision that now needs a new AI-specific check.
+```
+
+Do not count a general testing, metric, UX, or workflow lesson as AI-mainline merely because an AI product is used as an example. Count it only after the learner can reason about the AI-specific delta. Start every AI-mainline unit by naming this distinction.
+
+For evaluation and observability, the distinction is:
+
+| Practice | Primary question | Example evidence |
+|---|---|---|
+| Deterministic QA | Did a specified feature or rule execute as coded? | API returns the correct order status. |
+| Product measurement | Did users achieve a useful outcome? | Resolution rate, completion time, satisfaction. |
+| AI Evaluation / Evals | Did model, retrieval, tool selection, and output behavior meet task-quality and safety criteria across representative cases? | Current-policy citation, grounded answer, correct clarification. |
+| Observability | What happened in this live request, and which component caused the result? | Trace of query, retrieved documents, model version, tool calls, state, latency and cost. |
+
+An evaluation lesson must teach this system mechanism before asking for an eval-set or rubric design: a single user request may pass deterministic QA yet fail because retrieval selected stale context or the model misused valid context. The learner should first see the chain and its distinct failure modes.
 
 ## Capability map
 

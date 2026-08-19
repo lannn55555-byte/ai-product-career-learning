@@ -41,6 +41,7 @@ Study hours are optional calibration information, never a prerequisite to starti
   - **AI mainline:** AI-specific capability; this alone advances `Day N / 10`.
   - **Product foundation:** problem framing, hypotheses, research, metrics, decision tables, and related product skills; it has separate progress and never silently consumes an AI day.
 - Keep the tracks distinct for progress but connect them deliberately. For every AI module, name the related product foundation and explain both directions: how the foundation makes the AI decision useful or safe, and how AI changes the product-design question.
+- For every AI module, state the **AI-specific delta** before teaching: the model/retrieval/tool/state mechanism, failure mode, or responsibility that generic product practice alone does not cover. If no AI-specific delta exists, place the topic on the product-foundation track rather than consuming an AI-mainline day.
 - In Parallel mode, pair each AI block with its most relevant foundation block. In sequential modes, retain the bridge note for the later handoff. Read [../adaptive-ai-learning-coach/references/track-bridges.md](../adaptive-ai-learning-coach/references/track-bridges.md) when selecting pairs.
 - Default AI mainline foundation sprint:
   1. System anatomy and anchor scenario.
@@ -50,13 +51,13 @@ Study hours are optional calibration information, never a prerequisite to starti
   5. Tools, APIs, backend revalidation, and execution boundaries.
   6. State, routing, retries, idempotency, and human handoff.
   7. AI UX, user control, recovery, and safety.
-  8. Evaluation, observability, task success, and system quality.
-  9. Rebuild the anchor scenario as one system and defend the design.
-  10. Solve an unseen transfer scenario and select the next evidence-building step.
+  8. AI Evals and observability: distinguish deterministic QA and product metrics from evaluation of model, retrieval, tool-selection, and output behavior; use traces to locate live multi-component failures.
+  9. Rebuild the anchor scenario as one AI system and defend the component choices, AI-specific failure modes, evaluation plan, and operational trade-offs.
+  10. Solve an unseen AI transfer scenario and select the next evidence-building step from demonstrated gaps.
 - For every day, name: introduced capability nodes, revisited nodes, mastery target, product-foundation bridge, and one system-map update.
 - For every day, define one observable procedural outcome in the form `when [cue], choose [action], because [mechanism]; except when [boundary]`. Use the procedure loop in the source policy; do not use term recall as the completion criterion.
 - Use the same anchor scenario for connection, but use fresh scenarios to verify transfer. Do not treat a correct answer on the anchor alone as mastery.
-- For each relevant node, proactively teach a visible 1–3 term packet: English name/full name or acronym, plain definition, system position, distinction, and decision link. Then teach the product-relevant mechanism. Add the matching deep-mechanism branch when the learner asks why it works, the target role needs it, or an application reveals a mechanism-level gap. Do not make prior familiarity with a term a prerequisite for learning it, but do require use of the term in a decision explanation before marking the node oriented.
+- For each relevant node, proactively teach a visible 1–3 term packet: English name/full name or acronym, plain definition, system position, distinction, decision link, and AI-specific link. Immediately teach the mechanism and boundary that make those terms matter in the scenario before asking an application that relies on them. Add the matching deep-mechanism branch when the learner asks why it works, the target role needs it, or an application reveals a mechanism-level gap. Do not make prior familiarity with a term a prerequisite for learning it, but do require use of the term in a decision explanation before marking the node oriented.
 - Allow side questions to deepen a topic without advancing the day counter until that day's outcome is met.
 - Treat a real project, case, or prototype as an optional laboratory after the relevant concept is understood.
 - Use scenario-based applications, not definition drills.
@@ -77,13 +78,14 @@ Return:
 **Why it matters:**
 **Main outcome:**
 **Capability nodes:** [introduced + revisited]
+**AI-specific delta:** [what this adds beyond the paired product-foundation topic]
 **Key terms:** [1–3 terms: name + plain definition + decision link]
 **Mastery target:** [0–5 level and observable evidence]
 **Procedural outcome:** When [cue], choose [action], because [mechanism]; except when [boundary].
 **Product connection:**
 **System-map update:**
 **Aha check or transfer prompt:**
-**Dialogue sequence:** scenario cue → first decision → just-enough mechanism → boundary → revised decision → variation
+**Dialogue sequence:** scenario cue → optional baseline intuition → term packet → mechanism + boundary → decision → feedback → variation
 **Product-foundation block:** [topic or queued]
 **Done when:**
 ```
