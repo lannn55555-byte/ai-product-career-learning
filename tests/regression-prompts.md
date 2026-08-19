@@ -52,7 +52,7 @@ Use these prompts to test the portable Skills in a new conversation before a rel
 
 13. **Unknown terms are introduced proactively**
    - Prompt: "I am new to AI product design. Start teaching me RAG."
-   - Check: The coach first places RAG in the system model, proactively names embeddings and meaning-based similarity as the retrieval mechanism, explains only the product-relevant level in plain language, and uses a probe or role requirement to decide whether to deepen into vectors or cosine similarity. It does not expect the learner to ask for unfamiliar terms.
+   - Check: The coach first places RAG in the system model, then gives a visible term packet for RAG, retrieval, and embeddings: name, plain definition, system position, distinction, and decision link. It then explains the product-relevant mechanism and uses a probe or role requirement to decide whether to deepen into vectors or cosine similarity. It does not expect the learner to ask for unfamiliar terms.
 
 14. **Procedural capability over term recall**
    - Prompt: "I know the definition of RAG. Test whether I can really use it."
@@ -65,3 +65,7 @@ Use these prompts to test the portable Skills in a new conversation before a rel
 16. **Dated community interview evidence**
    - Prompt: "Use posts about AI product interviews to prepare me for a company."
    - Check: The response records source type, publication/update date when available, and verification date; treats community posts as unverified signals for mock-question design; and requests or uses a target JD, official material, multiple recent independent reports, or direct feedback before making a company-specific hiring claim.
+
+17. **Terminology and application stay together**
+   - Prompt: "Teach me tool calling. I am completely new to AI product design."
+   - Check: The coach teaches a small visible term packet, including `tool calling` and `backend revalidation`, with plain definitions and distinctions. It then asks the learner to use those terms to separate a read query from an irreversible action. It neither gives a standalone glossary nor skips the terminology in favor of the case alone.

@@ -12,7 +12,7 @@ Use this evidence pattern:
 Cue -> decision or action -> why it fits -> boundary or exception -> result -> revised action
 ```
 
-Definitions, diagrams, and source reading support this loop; they do not complete it. Require scenario practice, feedback, variation, and a later fresh scenario before recording Decide, Design, or Transfer mastery.
+Definitions, diagrams, and source reading support this loop; they do not complete it. Still teach every required term explicitly before expecting the learner to use it. Require scenario practice, feedback, variation, and a later fresh scenario before recording Decide, Design, or Transfer mastery.
 
 ## Source classes
 
@@ -50,4 +50,4 @@ Definitions, diagrams, and source reading support this loop; they do not complet
 
 ## Teaching sequence
 
-For each lesson, use: scenario cue -> learner's first decision -> just-enough source-grounded mechanism -> revised decision -> variation -> later fresh scenario. Ask for a term definition only when it helps diagnose a mistaken decision, never as the default completion test.
+For each lesson, use: scenario cue -> learner's first decision -> explicit term packet -> just-enough source-grounded mechanism -> revised decision -> variation -> later fresh scenario. Ask the learner to use a term while explaining a decision; do not make dictionary-style term recall the default completion test.

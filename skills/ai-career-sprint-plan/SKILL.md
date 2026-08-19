@@ -56,7 +56,7 @@ Study hours are optional calibration information, never a prerequisite to starti
 - For every day, name: introduced capability nodes, revisited nodes, mastery target, product-foundation bridge, and one system-map update.
 - For every day, define one observable procedural outcome in the form `when [cue], choose [action], because [mechanism]; except when [boundary]`. Use the procedure loop in the source policy; do not use term recall as the completion criterion.
 - Use the same anchor scenario for connection, but use fresh scenarios to verify transfer. Do not treat a correct answer on the anchor alone as mastery.
-- For each relevant node, proactively introduce its necessary technical terms at awareness level and teach the product-relevant mechanism when that node appears. Add the matching deep-mechanism branch when the learner asks why it works, the target role needs it, or an application reveals a mechanism-level gap. Do not make familiarity with a term a prerequisite for learning it.
+- For each relevant node, proactively teach a visible 1–3 term packet: English name/full name or acronym, plain definition, system position, distinction, and decision link. Then teach the product-relevant mechanism. Add the matching deep-mechanism branch when the learner asks why it works, the target role needs it, or an application reveals a mechanism-level gap. Do not make prior familiarity with a term a prerequisite for learning it, but do require use of the term in a decision explanation before marking the node oriented.
 - Allow side questions to deepen a topic without advancing the day counter until that day's outcome is met.
 - Treat a real project, case, or prototype as an optional laboratory after the relevant concept is understood.
 - Use scenario-based applications, not definition drills.
@@ -77,6 +77,7 @@ Return:
 **Why it matters:**
 **Main outcome:**
 **Capability nodes:** [introduced + revisited]
+**Key terms:** [1–3 terms: name + plain definition + decision link]
 **Mastery target:** [0–5 level and observable evidence]
 **Procedural outcome:** When [cue], choose [action], because [mechanism]; except when [boundary].
 **Product connection:**

@@ -23,6 +23,22 @@ Not every product needs every component. The learner must explain why a componen
 
 Assess procedural capability, not semantic recall. Use terms as labels that support a learner's ability to make and revise product decisions. The canonical procedure loop and the required source basis live in [learning-evidence-and-source-policy.md](learning-evidence-and-source-policy.md).
 
+## Terminology is required, not the finish line
+
+Teach the vocabulary for each capability node explicitly. Do not leave learners to infer names from a case, and do not replace a term with an analogy so completely that the learner cannot recognize it elsewhere.
+
+Use a small **term packet** when a node first appears. Include only the 1–3 terms needed for the next decision:
+
+| Field | Required content |
+|---|---|
+| Name | The common English name, full name, and acronym when one exists. |
+| Plain definition | One direct sentence: what it is. |
+| System position | Which component it describes and what it controls. |
+| Distinction | What nearby term it is not. |
+| Decision link | Which product decision becomes different once the learner understands it. |
+
+Keep the packet visible in the current lesson and reuse the terms in feedback and later scenarios. Ask the learner to use a term to explain a choice, not to recite a dictionary definition. A term packet supports orientation; scenario practice establishes capability.
+
 ## Capability map
 
 | Node | Core question | Depends on | Demonstrated mastery |
@@ -41,7 +57,7 @@ Assess procedural capability, not semantic recall. Use terms as labels that supp
 
 Do not expect learners to request terms they have never encountered. Introduce the necessary technical idea when its system node is first taught, then control depth rather than hiding the idea.
 
-1. **Awareness:** Proactively name the mechanism, its purpose, and one plain-language analogy. Every learner receives this level. Example: `Embeddings turn text meaning into positions so retrieval can look for nearby meanings.`
+1. **Awareness:** Proactively teach the mechanism's name, plain definition, purpose, and one plain-language analogy. Every learner receives this level. Example: `Embedding: a numeric representation of text meaning that lets retrieval compare nearby meanings.`
 2. **Working mechanism:** Explain the part that changes a product decision. Every learner receives this level when the matching node is taught.
 3. **Deep mechanism:** Expand the implementation-level explanation when the learner asks, the target role needs it, or a probe/application reveals a mechanism-level gap or misconception.
 
