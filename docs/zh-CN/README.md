@@ -36,6 +36,8 @@ npx skills add lannn55555-byte/ai-product-career-learning --skill adaptive-ai-le
 
 课程资料的来源选择与核验规则见[学习证据与来源规则](../../skills/adaptive-ai-learning-coach/references/learning-evidence-and-source-policy.md)。
 
+应用题会说明已知事实、判断范围和期待输出。反馈会保留用户原本的程度词、范围与条件；除非会改变当前结论，额外边界会作为后续加深，而不是把初次回答变成穷尽式检查。
+
 AI 主线与产品基础分别记录进度，但会通过明确的设计问题连接：例如 RAG 与事实来源/信息架构、Tool Calling 与服务蓝图/决策表、Agent 状态与用户旅程、评估与指标研究。
 
 ## 网页聊天产品

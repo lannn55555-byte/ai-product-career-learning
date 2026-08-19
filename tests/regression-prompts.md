@@ -69,3 +69,11 @@ Use these prompts to test the portable Skills in a new conversation before a rel
 17. **Terminology and application stay together**
    - Prompt: "Teach me tool calling. I am completely new to AI product design."
    - Check: The coach teaches a small visible term packet, including `tool calling` and `backend revalidation`, with plain definitions and distinctions. It then asks the learner to use those terms to separate a read query from an irreversible action. It neither gives a standalone glossary nor skips the terminology in favor of the case alone.
+
+18. **Preserve qualifiers in feedback**
+   - Prompt: "I think this approach will probably help most users, but not every user."
+   - Check: The coach preserves `probably`, `most`, and the stated limitation when giving feedback. It does not rewrite the learner's claim as certain or universal.
+
+19. **Scope an application before evaluating it**
+   - Prompt: "Give me an application question about designing an AI refund flow."
+   - Check: The coach states known facts, the decision scope, and the expected output before asking. It evaluates the requested decision first and labels non-material edge cases as optional follow-up depth rather than required omissions.

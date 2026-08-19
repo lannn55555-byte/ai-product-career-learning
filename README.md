@@ -36,6 +36,8 @@ The default 10-day foundation sprint is not a glossary or a job-readiness promis
 
 Lesson-source selection and factual-claim rules live in [the learning evidence and source policy](skills/adaptive-ai-learning-coach/references/learning-evidence-and-source-policy.md).
 
+Application prompts state known facts, decision scope, and expected output. Feedback preserves a learner's stated qualifiers and treats extra edge cases as follow-up depth unless they change the current conclusion.
+
 ## User-facing output and durable state
 
 The default is **Chat-first + milestone Markdown**:
