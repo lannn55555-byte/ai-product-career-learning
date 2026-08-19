@@ -54,10 +54,9 @@ Study hours are optional calibration information, never a prerequisite to starti
   9. Rebuild the anchor scenario as one system and defend the design.
   10. Solve an unseen transfer scenario and select the next evidence-building step.
 - For every day, name: introduced capability nodes, revisited nodes, mastery target, product-foundation bridge, and one system-map update.
-- For every day, define one observable procedural outcome in the form `when [cue], choose [action], because [mechanism]; except when [boundary]`. Do not use term recall as the completion criterion.
+- For every day, define one observable procedural outcome in the form `when [cue], choose [action], because [mechanism]; except when [boundary]`. Use the procedure loop in the source policy; do not use term recall as the completion criterion.
 - Use the same anchor scenario for connection, but use fresh scenarios to verify transfer. Do not treat a correct answer on the anchor alone as mastery.
 - For each relevant node, proactively introduce its necessary technical terms at awareness level and teach the product-relevant mechanism when that node appears. Add the matching deep-mechanism branch when the learner asks why it works, the target role needs it, or an application reveals a mechanism-level gap. Do not make familiarity with a term a prerequisite for learning it.
-- When a lesson relies on current platform behavior, model capabilities, regulations, or product facts, verify it with an authoritative current source when tools are available; otherwise label the claim as requiring verification.
 - Allow side questions to deepen a topic without advancing the day counter until that day's outcome is met.
 - Treat a real project, case, or prototype as an optional laboratory after the relevant concept is understood.
 - Use scenario-based applications, not definition drills.
@@ -83,7 +82,7 @@ Return:
 **Product connection:**
 **System-map update:**
 **Aha check or transfer prompt:**
-**Dialogue sequence:** concept → mechanism → boundary → connection → application
+**Dialogue sequence:** scenario cue → first decision → just-enough mechanism → boundary → revised decision → variation
 **Product-foundation block:** [topic or queued]
 **Done when:**
 ```

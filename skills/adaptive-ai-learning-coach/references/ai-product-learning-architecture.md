@@ -19,16 +19,9 @@ User problem
 
 Not every product needs every component. The learner must explain why a component is needed, what owns the source of truth, and what should remain deterministic.
 
-## Learning target: procedural capability
+## Learning target
 
-The primary target is not semantic recall of terms. It is the ability to notice a situation, choose an appropriate product action, explain why it fits, recognize its boundary, and adapt when the situation changes. Use terms only as labels that make this procedure easier to communicate.
-
-Record each durable insight in this form:
-
-```text
-When [cue], choose [action or design rule], because [mechanism or constraint];
-do not do this when [boundary]; verify through [observable result].
-```
+Assess procedural capability, not semantic recall. Use terms as labels that support a learner's ability to make and revise product decisions. The canonical procedure loop and the required source basis live in [learning-evidence-and-source-policy.md](learning-evidence-and-source-policy.md).
 
 ## Capability map
 
@@ -83,7 +76,6 @@ Track each node independently. Do not infer mastery from time spent, term recall
 3. Revisit the same scenario when each new node is learned. Mark what changed in the system map and why.
 4. Use a fresh scenario after several nodes. Do not reuse the anchor as the only proof of understanding.
 5. Record the node, mastery level, evidence, misconception or uncertainty, and next review point.
-6. Use the procedure loop: scenario cue -> learner decision -> mechanism -> feedback -> changed scenario -> revised decision. Space a later retrieval of the same decision rule.
 
 ## Aha checks
 

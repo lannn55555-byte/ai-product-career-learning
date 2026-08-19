@@ -34,7 +34,7 @@ npx skills add lannn55555-byte/ai-product-career-learning --skill adaptive-ai-le
 
 学习的重点是建立程序性能力，而不是背诵术语：识别场景线索、选择合适动作、说明为什么、识别边界，并在条件变化后修正动作。每个能力节点都有 0–5 的掌握度：见过、能识别、能解释、能做判断、能设计、能迁移；术语记忆不是完成标准。基础冲刺结束后，用户需要用一个没有见过的新场景重建系统，并说明组件选择与取舍。
 
-课程资料会区分稳定原理、当前平台行为、岗位证据、社区公开信号和用户自身证据。涉及模型能力、API、价格、政策等易变信息时，会优先核对官方当前文档；论坛或网友分享的面试题可用于发现题型、设计模拟练习，但不能直接当作公司事实。来源选择与核验规则见[学习证据与来源规则](../../skills/adaptive-ai-learning-coach/references/learning-evidence-and-source-policy.md)。
+课程资料的来源选择与核验规则见[学习证据与来源规则](../../skills/adaptive-ai-learning-coach/references/learning-evidence-and-source-policy.md)。
 
 AI 主线与产品基础分别记录进度，但会通过明确的设计问题连接：例如 RAG 与事实来源/信息架构、Tool Calling 与服务蓝图/决策表、Agent 状态与用户旅程、评估与指标研究。
 

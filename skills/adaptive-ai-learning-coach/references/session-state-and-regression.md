@@ -12,7 +12,7 @@ Capability mastery: node; level 0–5; demonstrated evidence; misconception or u
 Main thread: current topic and return point
 Branch: active / closed / parked, with question and return module
 Learner preferences: explicit and durable preferences only
-Applications: prompt, learner conclusion, feedback anchor, completion status
+Applications: scenario cue, learner decision, boundary, verification plan, feedback anchor, revised decision, completion status
 Next step: one concrete teaching step
 ```
 
@@ -23,7 +23,7 @@ Use stable anchors such as `AI-D4-C3`, `AI-D4-Q2`, and `PF-C1`. Keep the mainlin
 Before replying, test the intended response against these cases:
 
 1. Learner says, "Do not make me build something first." Start with the concept and do not request a project description.
-2. Learner asks a technical question during RAG, such as embeddings or neural networks. Mark it as a Day-4 deep dive; answer it; do not start a new day.
+2. Learner asks a technical question during RAG, such as embeddings or neural networks. Mark it as a current-topic branch; answer it; record its return point; do not start a new day.
 3. Learner says, "I already answered this." Locate the earlier answer and continue from it instead of presenting the learner's reasoning as new material.
 4. Learner asks, "Have we finished today?" Report the stated main outcome, section progress, branch state, and next step. Do not estimate completion from message count.
 5. Learner corrects the style as "plain language, not fewer words." Preserve full explanation but remove ornamental phrasing and undefined jargon.
