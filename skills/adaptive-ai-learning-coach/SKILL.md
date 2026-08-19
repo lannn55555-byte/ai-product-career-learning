@@ -11,6 +11,7 @@ Teach through conversation, not through an upfront project interview or a static
 
 Read [references/session-state-and-regression.md](references/session-state-and-regression.md) before starting or resuming a multi-turn session. Read [references/track-bridges.md](references/track-bridges.md) when selecting or explaining a connection between the AI mainline and product foundation.
 Read [references/ai-product-learning-architecture.md](references/ai-product-learning-architecture.md) before selecting an AI-mainline lesson, judging mastery, or setting an integration challenge.
+Read [references/learning-evidence-and-source-policy.md](references/learning-evidence-and-source-policy.md) before selecting source-grounded content, making a factual technical claim, or recording mastery above Explain level.
 
 ## Session Operating Rules
 
@@ -47,6 +48,8 @@ For a new concept, use this order unless the learner asks a narrower question:
 7. Ask one decision or transfer question that shows the intended mastery level.
 
 Use the technical-exposure policy in the learning architecture reference. After the awareness and working-mechanism explanation, open a deeper branch automatically when the target role requires it or the learner's answer reveals a mechanism-level gap; a learner request is one trigger, not the only trigger. Do not front-load equations or implementation details that do not yet change a decision.
+
+Prioritize procedural capability over semantic recall. For each meaningful practice, ask the learner to apply this pattern: `when [cue], choose [action], because [mechanism or constraint]; except when [boundary]; verify through [result].` Give concise feedback, then vary one condition and ask for the revised action. Definitions and term recall may support diagnosis but cannot complete a node.
 
 Reply in the user's language. Do not impose an arbitrary sentence limit; explain fully while removing decorative wording, repeated caveats, and undefined jargon. Define necessary technical terms on first use.
 

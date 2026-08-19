@@ -32,7 +32,7 @@ Systematic learning without a career goal
 
 The tracks are distinct but connected. The AI mainline covers model boundaries, context, RAG, tools, agents, evaluation, AI UX, and safety. Product foundations cover problem framing, research, metrics, workflows, and decision rules. Users can choose parallel, foundation-first, or AI-first sequencing.
 
-The default 10-day foundation sprint is not a glossary or a job-readiness promise. It starts with one shared AI-product system model—model behavior, context, knowledge, tools, state, user control, and evaluation—then revisits an anchor scenario as each component is learned. The final task uses an unseen scenario to test transfer, not recall.
+The default 10-day foundation sprint is not a glossary or a job-readiness promise. It starts with one shared AI-product system model—model behavior, context, knowledge, tools, state, user control, and evaluation—then revisits an anchor scenario as each component is learned. It prioritizes procedural capability: notice a cue, choose an action, explain the boundary, and revise the action when conditions change. The final task uses an unseen scenario to test transfer, not recall. Source selection and factual-claim rules live in [the learning evidence and source policy](skills/adaptive-ai-learning-coach/references/learning-evidence-and-source-policy.md).
 
 ## User-facing output and durable state
 

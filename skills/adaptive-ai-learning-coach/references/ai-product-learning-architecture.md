@@ -1,6 +1,6 @@
 # AI Product Learning Architecture
 
-Use this reference to plan or teach the AI mainline. Treat it as a connected capability map, not a list of isolated topics.
+Use this reference to plan or teach the AI mainline. Treat it as a connected capability map, not a list of isolated topics. Read [learning-evidence-and-source-policy.md](learning-evidence-and-source-policy.md) to select source-grounded content and collect procedural learning evidence.
 
 ## Shared system model
 
@@ -18,6 +18,17 @@ User problem
 ```
 
 Not every product needs every component. The learner must explain why a component is needed, what owns the source of truth, and what should remain deterministic.
+
+## Learning target: procedural capability
+
+The primary target is not semantic recall of terms. It is the ability to notice a situation, choose an appropriate product action, explain why it fits, recognize its boundary, and adapt when the situation changes. Use terms only as labels that make this procedure easier to communicate.
+
+Record each durable insight in this form:
+
+```text
+When [cue], choose [action or design rule], because [mechanism or constraint];
+do not do this when [boundary]; verify through [observable result].
+```
 
 ## Capability map
 
@@ -54,16 +65,16 @@ Treat a learner-requested deep dive, a role requirement, or a revealed mechanism
 
 ## Mastery levels
 
-Track each node independently. Do not infer mastery from time spent.
+Track each node independently. Do not infer mastery from time spent, term recall, or a correct answer on the anchor scenario alone.
 
 | Level | Meaning | Evidence |
 |---|---|---|
 | 0 — Unseen | The learner has not encountered the node. | None. |
-| 1 — Recognize | The learner can identify the node in an explained example. | Names its purpose correctly. |
+| 1 — Recognize | The learner can identify the node in an explained example. | Names its purpose correctly; this is orientation, not completion. |
 | 2 — Explain | The learner can explain why it exists and its boundary. | Plain-language explanation plus one limitation. |
-| 3 — Decide | The learner can choose whether and how to use it in a scenario. | Defends a design choice and rejects an unsuitable option. |
-| 4 — Design | The learner can combine it with adjacent nodes in a concrete flow. | Produces a coherent flow, rule, schema, or evaluation plan. |
-| 5 — Transfer | The learner can apply the system model to an unfamiliar domain and revise after critique. | Solves a new scenario and explains trade-offs. |
+| 3 — Decide | The learner can choose whether and how to use it in a scenario. | States a cue, defends a design choice, and rejects an unsuitable option. |
+| 4 — Design | The learner can combine it with adjacent nodes in a concrete flow. | Produces a coherent flow, rule, schema, or evaluation plan with a verification step. |
+| 5 — Transfer | The learner can apply the system model to an unfamiliar domain and revise after critique. | Solves a new scenario, explains trade-offs, and changes the procedure when conditions change. |
 
 ## Spiral learning rules
 
@@ -72,6 +83,7 @@ Track each node independently. Do not infer mastery from time spent.
 3. Revisit the same scenario when each new node is learned. Mark what changed in the system map and why.
 4. Use a fresh scenario after several nodes. Do not reuse the anchor as the only proof of understanding.
 5. Record the node, mastery level, evidence, misconception or uncertainty, and next review point.
+6. Use the procedure loop: scenario cue -> learner decision -> mechanism -> feedback -> changed scenario -> revised decision. Space a later retrieval of the same decision rule.
 
 ## Aha checks
 

@@ -12,6 +12,7 @@ Create the learning route and initialize durable learning state. Do not teach th
 Read a verified Learning Handoff when available. Otherwise use the accepted diagnosis and relevant learner information: target role, experience, domain assets, AI-specific gaps, prior familiarity, target JD, public-project constraints, learning preferences, and accessibility preferences. Do not repeat the full diagnosis or ask for information already available. If no diagnosis exists, create a provisional route, label its assumptions, and create a provisional handoff for later recalibration.
 
 Read [../adaptive-ai-learning-coach/references/ai-product-learning-architecture.md](../adaptive-ai-learning-coach/references/ai-product-learning-architecture.md) before planning. Use its system model, capability nodes, mastery levels, spiral rules, and integration challenge.
+Read [../adaptive-ai-learning-coach/references/learning-evidence-and-source-policy.md](../adaptive-ai-learning-coach/references/learning-evidence-and-source-policy.md) before setting mastery evidence or selecting source-grounded content.
 
 ## Intake
 
@@ -53,6 +54,7 @@ Study hours are optional calibration information, never a prerequisite to starti
   9. Rebuild the anchor scenario as one system and defend the design.
   10. Solve an unseen transfer scenario and select the next evidence-building step.
 - For every day, name: introduced capability nodes, revisited nodes, mastery target, product-foundation bridge, and one system-map update.
+- For every day, define one observable procedural outcome in the form `when [cue], choose [action], because [mechanism]; except when [boundary]`. Do not use term recall as the completion criterion.
 - Use the same anchor scenario for connection, but use fresh scenarios to verify transfer. Do not treat a correct answer on the anchor alone as mastery.
 - For each relevant node, proactively introduce its necessary technical terms at awareness level and teach the product-relevant mechanism when that node appears. Add the matching deep-mechanism branch when the learner asks why it works, the target role needs it, or an application reveals a mechanism-level gap. Do not make familiarity with a term a prerequisite for learning it.
 - When a lesson relies on current platform behavior, model capabilities, regulations, or product facts, verify it with an authoritative current source when tools are available; otherwise label the claim as requiring verification.
@@ -77,6 +79,7 @@ Return:
 **Main outcome:**
 **Capability nodes:** [introduced + revisited]
 **Mastery target:** [0–5 level and observable evidence]
+**Procedural outcome:** When [cue], choose [action], because [mechanism]; except when [boundary].
 **Product connection:**
 **System-map update:**
 **Aha check or transfer prompt:**

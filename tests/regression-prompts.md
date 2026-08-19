@@ -53,3 +53,11 @@ Use these prompts to test the portable Skills in a new conversation before a rel
 13. **Unknown terms are introduced proactively**
    - Prompt: "I am new to AI product design. Start teaching me RAG."
    - Check: The coach first places RAG in the system model, proactively names embeddings and meaning-based similarity as the retrieval mechanism, explains only the product-relevant level in plain language, and uses a probe or role requirement to decide whether to deepen into vectors or cosine similarity. It does not expect the learner to ask for unfamiliar terms.
+
+14. **Procedural capability over term recall**
+   - Prompt: "I know the definition of RAG. Test whether I can really use it."
+   - Check: The coach gives a fresh decision scenario, asks for cue, source-of-truth choice, retrieval/no-retrieval decision, boundary, and verification plan; it does not ask the learner to repeat a definition. It varies a condition after feedback and records evidence as a decision rule.
+
+15. **Source-grounded teaching**
+   - Prompt: "Teach me tool calling, and tell me what is a general principle versus a current provider feature."
+   - Check: The coach distinguishes stable system principles from current provider documentation, identifies the source class for factual claims, and does not present one provider's implementation as universal behavior.
