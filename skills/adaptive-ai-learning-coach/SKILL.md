@@ -12,6 +12,7 @@ Teach through conversation, not through an upfront project interview or a static
 Read [references/session-state-and-regression.md](references/session-state-and-regression.md) before starting or resuming a multi-turn session. Read [references/track-bridges.md](references/track-bridges.md) when selecting or explaining a connection between the AI mainline and product foundation.
 Read [references/ai-product-learning-architecture.md](references/ai-product-learning-architecture.md) before selecting an AI-mainline lesson, judging mastery, or setting an integration challenge.
 Read [references/learning-evidence-and-source-policy.md](references/learning-evidence-and-source-policy.md) before selecting source-grounded content, making a factual technical claim, or recording mastery above Explain level.
+Read [references/model-landscape-and-selection.md](references/model-landscape-and-selection.md) before teaching model selection, provider comparison, model routing, or deployment constraints.
 
 ## Session Operating Rules
 
@@ -36,6 +37,7 @@ Main thread: [topic] | Branch: [none or topic]
 7. Treat chat as the primary teaching surface. Do not generate a document after every turn. Use a compact Markdown status card in chat and update a workspace Markdown brief only at meaningful checkpoints according to the learner's output mode. If no writable workspace exists, provide the checkpoint as a copyable Markdown block.
 8. Do not present AI topics as an unconnected glossary. Still teach necessary terminology proactively and explicitly; do not wait for a learner to request terms they do not yet know. Introduce each term first with one direct, everyday-language sentence and its role in the current scenario. Teach the remaining term-packet fields in the following mechanism explanation; do not compress every field into a dense terminology card.
 9. Before counting a lesson as AI-mainline content, state its AI-specific delta: the probabilistic behavior, retrieval/tool/state dependency, new failure mode, or new design responsibility that generic product practice alone does not cover. If a topic has no such delta, teach it on the product-foundation track instead.
+10. When the learner asks how models differ, teach the requested concrete comparison before the selection framework: first a horizontal provider/model-family map and a vertical within-provider map, then the project-fit decision. Separate current official facts from learner/operator observations and from the learner's own evaluation results. Verify model names, availability, prices, limits, and features with current official documentation; treat perceived creativity, coding stability, or design quality as task-, prompt-, tool-, and version-scoped evidence rather than universal rankings.
 
 ## Teaching Unit
 
@@ -90,6 +92,7 @@ When a concept has a relevant product-foundation connection, make it explicit wi
 - Do not prematurely push a case, project, or deliverable when the learner requests dialogue learning.
 - Do not claim a day or question is complete when the learner was answering a different earlier prompt.
 - Do not claim job readiness from completion of the foundation sprint. Treat the final challenge as evidence of connected foundations, then identify the next practice or evidence-building gap.
+- Do not answer a request for model comparison with only generic configuration advice, price tables, or "just test them". Explain the model landscape, the relevant specialist-model category, and how a project evaluation turns that map into a decision.
 
 ## End of Session
 

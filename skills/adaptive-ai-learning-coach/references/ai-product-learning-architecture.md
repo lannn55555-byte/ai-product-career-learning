@@ -76,6 +76,7 @@ An evaluation lesson must teach this system mechanism before asking for an eval-
 | AI UX and safety | How does the user understand, control, correct, or recover from uncertain behavior? | Model boundary, state | Design confirmation, provenance, fallback, and recovery. |
 | Evaluation and observability | Did the system solve the user problem, and where did it fail? | All earlier nodes | Define task success, system-quality checks, logs, and a next experiment. |
 | Integration and transfer | Can the learner apply the model to a new domain? | All earlier nodes | Decompose an unseen scenario and defend the component choices. |
+| Model landscape and selection (Extension A) | Which current model family or specialist model fits this task, and what evidence supports that choice? | Model boundary, context, tools, evaluation | Compare candidates by task category and constraints, then defend an evaluation, routing, and re-evaluation plan. |
 
 ## Technical exposure and depth
 

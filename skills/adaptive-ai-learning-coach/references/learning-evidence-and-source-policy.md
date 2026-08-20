@@ -36,6 +36,7 @@ Definitions, diagrams, and source reading support this loop; they do not complet
 | State and orchestration | Stable engineering patterns plus current provider docs only when provider behavior matters | Draw states, transitions, retry/idempotency behavior, stop rule, and handoff. |
 | AI UX and safety | Risk source plus actual user/task context | Design uncertainty display, correction, recovery, and an unsafe-action boundary. |
 | Evaluation and observability | Evaluation source plus product metrics definitions | Define a task-success measure, a system-quality measure, and a diagnostic follow-up. |
+| Model landscape and selection | Current official provider documentation plus a task-representative comparative evaluation | Separate provider facts, operator observations, and measured task results; select a candidate, fallback, and re-evaluation trigger. |
 
 ## Selection and update rules
 

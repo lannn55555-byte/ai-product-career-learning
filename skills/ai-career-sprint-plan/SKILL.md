@@ -13,6 +13,7 @@ Read a verified Learning Handoff when available. Otherwise use the accepted diag
 
 Read [../adaptive-ai-learning-coach/references/ai-product-learning-architecture.md](../adaptive-ai-learning-coach/references/ai-product-learning-architecture.md) before planning. Use its system model, capability nodes, mastery levels, spiral rules, and integration challenge.
 Read [../adaptive-ai-learning-coach/references/learning-evidence-and-source-policy.md](../adaptive-ai-learning-coach/references/learning-evidence-and-source-policy.md) before setting mastery evidence or selecting source-grounded content.
+Read [../adaptive-ai-learning-coach/references/model-landscape-and-selection.md](../adaptive-ai-learning-coach/references/model-landscape-and-selection.md) when the route includes model selection, provider comparison, or deployment constraints.
 
 ## Intake
 
@@ -54,6 +55,11 @@ Study hours are optional calibration information, never a prerequisite to starti
   8. AI Evals and observability: distinguish deterministic QA and product metrics from evaluation of model, retrieval, tool-selection, and output behavior; use traces to locate live multi-component failures.
   9. Rebuild the anchor scenario as one AI system and defend the component choices, AI-specific failure modes, evaluation plan, and operational trade-offs.
   10. Solve an unseen AI transfer scenario and select the next evidence-building step from demonstrated gaps.
+- Add **Extension A — Model capability map and project selection** by default after the 10-day foundation sprint. It is a connected follow-up module, not a retroactive replacement for any AI-mainline day. It has three sessions:
+  1. **Capability map:** compare current model families horizontally (across providers) and vertically (flagship, balanced/fast, and specialist models within a provider). Start with concrete task categories: reasoning, coding/Agent work, long-context work, creativity, multimodal understanding/generation, voice, retrieval/reranking, and image/video/3D. Distinguish a general-purpose model, a specialist model, and a specialist Agent. Treat claims such as "more creative" or "more stable at code" as task- and version-specific hypotheses, not universal facts.
+  2. **Production fit:** select candidates using task modality, quality and safety requirements, latency, context/output limits, Tool Calling and structured-output support, version maturity, availability, rate limits, regional/data-processing constraints, pricing unit, and ecosystem/operational fit. Explain what each factor changes in the product design.
+  3. **Evidence-based choice:** design a small task-representative evaluation, compare quality/safety/P95 latency/cost, set hard constraints, then define routing, fallback, and a re-evaluation trigger when the model version or task changes.
+- For Extension A, label each statement as one of: **current official product fact**, **learner or operator observation**, or **evaluation result**. Verify dynamic provider facts on the day of teaching from official sources. Do not replace the requested cross-model map with a generic cost-and-configuration checklist.
 - For every day, name: introduced capability nodes, revisited nodes, mastery target, product-foundation bridge, and one system-map update.
 - For every day, define one observable procedural outcome in the form `when [cue], choose [action], because [mechanism]; except when [boundary]`. Use the procedure loop in the source policy; do not use term recall as the completion criterion.
 - Use the same anchor scenario for connection, but use fresh scenarios to verify transfer. Do not treat a correct answer on the anchor alone as mastery.
@@ -90,9 +96,11 @@ Return:
 **Done when:**
 ```
 
-5. An anchor scenario and initial system map.
-6. A learning-state initialization section with mastery levels and review points.
-7. One handoff to `adaptive-ai-learning-coach`.
+5. When Extension A is included, add a separate three-session card with: capability categories compared, evidence class for each conclusion, candidate models or model families, hard constraints, evaluation cases and metrics, routing/fallback choice, and next re-evaluation trigger. Keep its progress separate from `Day N / 10`.
+
+6. An anchor scenario and initial system map.
+7. A learning-state initialization section with mastery levels and review points.
+8. One handoff to `adaptive-ai-learning-coach`.
 
 Present the route in chat first. When the learner selects `Chat-first + milestone Markdown` or `Document-first`, use the matching-language [English system map](templates/en/learning-system-map.md) or [Chinese system map](templates/zh-CN/learning-system-map.md) inside one editable sprint-plan file after the route is accepted. If the host has no writable workspace, return one clearly named Markdown block for the learner to copy and retain. Do not create a separate file for every lesson. Use a compact table or progress card for track comparison; use a diagram only when it clarifies cross-track dependencies.
 

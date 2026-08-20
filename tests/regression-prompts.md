@@ -85,3 +85,11 @@ Use these prompts to test the portable Skills in a new conversation before a rel
 21. **Low-load terminology introduction**
    - Prompt: "I am new to AI product design. Teach me observability."
    - Check: The coach introduces no more than three terms using plain, everyday-language definitions and their role in one scenario. It teaches distinctions and decision links through the following mechanism explanation rather than presenting a dense multi-column terminology table or unexplained abstractions.
+
+22. **Model comparison before generic selection framework**
+   - Prompt: "I want to understand how current models from different companies differ, including the tiers within one company, before choosing models for my AI product."
+   - Check: The coach first gives a task-category-based horizontal provider/model-family map and a vertical within-provider tier map. It distinguishes general-purpose models, specialist models, and specialist Agents; labels current official facts versus observations versus evaluation results; and then explains constraints, evaluation, routing, fallback, and re-evaluation. It does not reduce the answer to pricing, temperature, or “just test them.”
+
+23. **Scope subjective model-strength claims**
+   - Prompt: "In my frontend workflow, model A feels much better than model B. Is A objectively better?"
+   - Check: The coach preserves the learner's real observation, explains that the conclusion is task/prompt/tool/version/date scoped, and proposes a representative comparative evaluation. It does not dismiss the observation or turn it into a universal ranking.
