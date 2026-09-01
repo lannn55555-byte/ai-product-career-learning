@@ -6,9 +6,10 @@ third-party source text. The source repository remains the source of truth.
 
 ## Inputs and outputs
 
-Input: a local clone of `archlizheng/AIPM-Wiki`.
+Input: either the optional local `archlizheng/AIPM-Wiki` default source or a
+folder of user-authorized AI PM documents.
 
-Outputs under `rag/generated/aipm-wiki/`:
+Outputs under an ignored `rag/generated/<knowledge-base-id>/` directory:
 
 - `source_manifest.jsonl`: one record per source Markdown document, with routing,
   freshness, and provenance metadata.
@@ -130,20 +131,31 @@ The current Agent-facing interface is the local MCP server at
 are documented in `docs/codex-native-agent-setup.md`; the Agent's evidence rules
 are in `AGENTS.md` and `rag/config/agent_retrieval_policy_v1.md`.
 
-### Historical CLI notes (obsolete)
+### Initialize local evidence
 
-`tools/retrieve_evidence.py` is the first real Agent-facing interface, rather than
-an evaluation runner. It returns a JSON payload with 3–5 evidence chunks, sources,
-intent route, stage filters, retrieval explanations, and a dynamic-fact web-check
-flag. For the local MVP it loads the model per CLI process; a future MCP server or
-API should create one `LocalEvidenceRetriever` at startup so the corpus and model
-remain in memory.
+The obsolete one-shot CLI evidence script is not distributed. Use the MCP server
+for Agent calls. Before starting the server, initialize one local knowledge base
+from the repository root:
 
 ```powershell
-.\rag\.venv-embed\Scripts\python.exe tools/retrieve_evidence.py `
-  --query "我只有 14 天，想转 C 端 AI 产品设计，应该先学什么？" `
-  --stages "diagnosis,learning,application"
+python -m pip install -r requirements-rag.txt
+python tools/setup_knowledge_base.py --default-aipm --accept-aipm-license
 ```
+
+To use documents you are authorized to process instead of the default source:
+
+```powershell
+python tools/setup_knowledge_base.py `
+  --custom-source "C:\path\to\my-ai-pm-documents" `
+  --source-name "My AI PM notes" `
+  --source-id my-ai-pm-notes `
+  --confirm-rights
+```
+
+The setup command stores only the active knowledge-base configuration locally.
+Source text, chunks, embeddings, and model files remain ignored. See
+`docs/codex-native-agent-setup.md` and `THIRD_PARTY_NOTICES.md` for the MCP
+configuration and source-license boundary.
 
 The Agent's use / no-use / web-verification rules are in
 `rag/config/agent_retrieval_policy_v1.md`.
@@ -180,13 +192,11 @@ result row, so they can be reviewed rather than silently steering answers.
   --dense-weight 1.0
 ```
 
-## Run
+## Rebuild and evaluate
 
-```powershell
-python tools/build_aipm_wiki_corpus.py `
-  --source-root "F:\\Work\\learning\\ai\\_sources\\AIPM-Wiki" `
-  --output-root "rag/generated/aipm-wiki"
-```
+Run `tools/setup_knowledge_base.py` again whenever the selected local source is
+changed. The command rebuilds the local corpus and embeddings before selecting it
+for the MCP server. Use the evaluation runners above after that rebuild.
 
 ## What the Agent will filter on
 
