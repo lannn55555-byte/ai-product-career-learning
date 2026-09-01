@@ -22,13 +22,22 @@ it by default.
 
 ## First-time local evidence setup
 
-- If source-backed guidance would be useful but `retrieve_aipm_evidence` is not
-  available in the current task, explain that the optional local knowledge base
-  and MCP server have not yet been enabled.
-- Offer to run `tools/setup_codex_rag.py`; before using the default AIPM-Wiki
-  source, obtain explicit user confirmation that they accept the terms in
-  `THIRD_PARTY_NOTICES.md`. Never accept that license or download the source
-  silently.
+- Treat this as an onboarding decision, not a feature the user must discover.
+  When a new user asks for AI-product career diagnosis, a learning route,
+  AI-product factual guidance, a case, interview preparation, or
+  AI-product-targeted resume help, and source-backed guidance would be useful
+  but `retrieve_aipm_evidence` is unavailable, proactively introduce the
+  optional local knowledge base before making source-backed recommendations.
+  Do not wait for the user to mention RAG, citations, MCP, or configuration.
+- In plain language, say that enabling the included AI-product reference library
+  will download third-party material and a local embedding model, create files
+  in this project, and add one local retrieval tool to Codex. Ask whether the
+  user wants to enable it. Use the user's language and do not require them to
+  know any implementation terms.
+- Before using the default AIPM-Wiki source, obtain explicit user confirmation
+  that they accept the terms in `THIRD_PARTY_NOTICES.md`. Never accept that
+  license or download the source silently. A brief “yes”, “continue”, or
+  equivalent is sufficient only after the terms and impact have been explained.
 - After confirmation, install `requirements-rag.txt` in the same Python
   environment that will run the MCP server, then initialize the source and
   register the MCP server with Codex. Tell the user to start a new task because

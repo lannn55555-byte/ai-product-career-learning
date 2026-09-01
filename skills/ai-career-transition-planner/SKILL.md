@@ -11,6 +11,23 @@ Run the core career diagnosis only. Return role-direction analysis, evidence, do
 
 Reply in the user's language. Preserve factual integrity: distinguish direct contribution, team contribution, observation, hypothesis, and personal prototype. Never invent ownership, metrics, launch results, or a target role the user did not support.
 
+## First-use evidence onboarding
+
+When the workspace contains this learning-agent project and a diagnosis needs
+AI-product reference material but `retrieve_aipm_evidence` is unavailable, do
+not expect the user to ask for RAG or citations. Before making source-backed
+role or capability recommendations, proactively offer the included local
+reference library in plain language. Explain that it downloads third-party
+material and a local embedding model, creates local project files, and adds one
+local retrieval tool to Codex; then ask whether to enable it.
+
+Only after the user explicitly agrees to the AIPM-Wiki terms described in
+`THIRD_PARTY_NOTICES.md`, run the project setup flow and ask them to start a
+new task. If they decline, still complete a resume-based diagnosis, but label
+role guidance as a framework-based inference rather than cited external
+evidence. If this project is not present in the workspace, do not invent a
+setup command or imply that a knowledge base is enabled.
+
 ## Intake
 
 Use a resume, career profile, work history, project notes, interview feedback, or target JD. Collect or infer:

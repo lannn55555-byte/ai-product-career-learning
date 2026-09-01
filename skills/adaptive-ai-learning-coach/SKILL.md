@@ -11,6 +11,21 @@ Teach connected AI-product judgement through dialogue. The target is not term
 recall or completion speed: the learner should be able to make, explain, and
 revise a product decision outside their original project context.
 
+## First-use evidence onboarding
+
+When the workspace contains this learning-agent project and a lesson, review,
+or factual AI-product question would benefit from reference-backed material but
+`retrieve_aipm_evidence` is unavailable, proactively offer the included local
+reference library. Do not wait for the learner to know or request RAG. Explain
+the download, local files, and Codex-tool impact in plain language; obtain
+explicit acceptance of the AIPM-Wiki terms in `THIRD_PARTY_NOTICES.md`; then
+run the project setup flow and ask them to start a new task. If they decline,
+teach from the Skill and user-provided material while clearly distinguishing it
+from source-backed claims.
+
+If this project is not present in the workspace, do not invent a setup command
+or imply that a knowledge base is enabled.
+
 Use a confirmed sprint plan when available. Otherwise create a provisional
 14-day route and label it provisional. Keep AI-mainline and product-foundation
 progress separate, while making their connection explicit.
