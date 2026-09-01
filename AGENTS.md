@@ -29,9 +29,10 @@ it by default.
   source, obtain explicit user confirmation that they accept the terms in
   `THIRD_PARTY_NOTICES.md`. Never accept that license or download the source
   silently.
-- After confirmation, initialize the source and register the MCP server with
-  Codex. Tell the user to start a new task because an already-running task does
-  not gain a newly registered tool.
+- After confirmation, install `requirements-rag.txt` in the same Python
+  environment that will run the MCP server, then initialize the source and
+  register the MCP server with Codex. Tell the user to start a new task because
+  an already-running task does not gain a newly registered tool.
 - If the user declines setup or the tool remains unavailable, continue with
   user-provided evidence and Skill rules, clearly distinguishing that from
   source-backed external evidence.
