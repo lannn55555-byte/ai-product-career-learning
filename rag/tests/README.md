@@ -1,5 +1,27 @@
 # Retrieval acceptance set
 
+## Cross-language acceptance set
+
+`cross_language_acceptance_cases_v1.jsonl` contains English questions whose
+expected evidence remains in the Chinese AIPM-Wiki corpus.
+`cross_language_gold_standard_v1.jsonl` records the expected evidence paths.
+Run it after building the local corpus and embeddings:
+
+```powershell
+python tools/run_hybrid_retrieval.py `
+  --chunks "rag/generated/aipm-wiki/chunks.jsonl" `
+  --cases "rag/tests/cross_language_acceptance_cases_v1.jsonl" `
+  --gold-standard "rag/tests/cross_language_gold_standard_v1.jsonl" `
+  --model-cache "rag/models/bge-m3" `
+  --embeddings "rag/generated/bge-m3/chunk_embeddings.npy" `
+  --output "rag/generated/cross-language-v1/report.json" `
+  --routing-config "rag/config/intent_routes_v1.json"
+```
+
+This checks retrieval only. A separate human review must verify that the Agent
+answers in the user's language while preserving the original Chinese source
+title and URL.
+
 These cases are the Agent's product-level retrieval checks. They are not model
 benchmarks and do not prescribe wording for the final answer. A case passes when the
 retrieval layer returns useful, correctly scoped evidence for the orchestrator.

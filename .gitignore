@@ -20,6 +20,8 @@ secrets/
 rag/generated/
 rag/.venv*/
 rag/models/
+rag/sources/
+rag/local/
 
 # Python runtime artifacts
 __pycache__/

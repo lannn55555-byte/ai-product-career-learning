@@ -69,6 +69,14 @@ Choose the Skill that matches the learner's current need. A typical route is dia
 
 Each Skill is self-contained. Discovery, installation commands, and available file or tool access vary by host, so verify that the host has found the installed Skill.
 
+## Optional local AI PM RAG
+
+This repository can expose a local, model-callable evidence tool for the AI PM
+learning workflow. It supports the default AIPM-Wiki knowledge base and
+user-authorized AI PM documents, while keeping source text, chunks, embeddings,
+and models local and ignored. See [the Codex-native setup guide](docs/codex-native-agent-setup.md)
+and [third-party source notice](THIRD_PARTY_NOTICES.md).
+
 ### Browser chat products
 
 Browser-chat products do not use the same local Skill installation flow as coding agents. Use the host's native customization format where available (for example, a Gem or custom instructions). A GitHub link may provide temporary reading context, but its behavior varies by host.

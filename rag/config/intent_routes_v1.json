@@ -16,13 +16,15 @@
     },
     {
       "name": "career_direction",
-      "regex_patterns": ["转行", "职业方向", "适合什么", "优势", "短板", "适配", "找什么岗位"],
+      "regex_patterns": ["转行", "职业方向", "适合什么", "优势", "短板", "适配", "找什么岗位", "career direction", "career path", "transition.*ai product", "switch.*ai product", "strengths", "gaps", "fit"],
+      "query_expansion": "AI 产品转行方向；岗位类型；能力模型；优势短板；转型路径",
       "stage_boosts": {"diagnosis": 0.003},
       "path_prefix_boosts": {"docs/00-roadmap/": 0.003}
     },
     {
       "name": "learning_plan",
-      "regex_patterns": ["学习路线", "学习计划", "先学什么", "怎么学", "14天", "30天", "60天", "入门"],
+      "regex_patterns": ["学习路线", "学习计划", "先学什么", "怎么学", "14天", "30天", "60天", "入门", "learning plan", "what should i learn", "learn first", "14 days", "30 days", "60 days", "beginner"],
+      "query_expansion": "AI 产品转行学习路线；14 天优先级；能力模型；模型选型决策框架；如何进行模型选型；评估",
       "stage_boosts": {"diagnosis": 0.001, "learning": 0.002, "application": 0.001},
       "path_prefix_boosts": {"docs/00-roadmap/": 0.002, "docs/01-ai-basics/": 0.002, "docs/02-pm-skills/cost-and-tech/model-selection-framework.md": 0.002}
     },
@@ -34,14 +36,28 @@
     },
     {
       "name": "agent_solution_tradeoff",
-      "regex_patterns": ["多agent", "多 agent", "多智能体", "不用agent", "不用 agent", "不该用agent", "不该用 agent", "要不要用agent", "要不要用 agent", "什么时候不该.*agent", "什么时候不应该.*agent"],
+      "regex_patterns": ["多agent", "多 agent", "多智能体", "不用agent", "不用 agent", "不该用agent", "不该用 agent", "要不要用agent", "要不要用 agent", "什么时候不该.*agent", "什么时候不应该.*agent", "when.*not use.*agent", "should.*not use.*agent", "not use.*agent"],
       "query_expansion": "何时不该使用多 Agent；单 Agent、规则工作流与多 Agent 的取舍",
       "stage_boosts": {"application": 0.002, "learning": 0.001},
       "path_prefix_boosts": {"docs/02-pm-skills/ai-product-operations/when-not-to-use-multi-agent.md": 0.005, "docs/04-interview/basics/when-not-to-use-agent.md": 0.003}
     },
     {
+      "name": "long_context_vs_rag",
+      "regex_patterns": ["长上下文.*rag", "rag.*长上下文", "long context", "knowledge base.*changes", "combination.*rag", "rag.*combination", "should i use.*rag"],
+      "query_expansion": "长上下文 vs RAG；知识库更新频率；知识规模；引用；权限；什么时候组合使用",
+      "stage_boosts": {"learning": 0.003, "application": 0.002},
+      "path_prefix_boosts": {"docs/01-ai-basics/llm/long-context-vs-rag.md": 0.005, "docs/01-ai-basics/llm/production-rag-checklist.md": 0.004}
+    },
+    {
+      "name": "rag_concept_and_boundary",
+      "regex_patterns": ["检索增强", "rag"],
+      "query_expansion": "RAG 检索增强生成；解决什么问题；不能解决什么问题；幻觉；事实准确性边界",
+      "stage_boosts": {"learning": 0.003, "application": 0.001},
+      "path_prefix_boosts": {"docs/01-ai-basics/llm/what-is-rag.md": 0.005, "docs/01-ai-basics/llm/hallucination.md": 0.004}
+    },
+    {
       "name": "concept_explanation",
-      "regex_patterns": ["什么是", "解释", "原理", "区别", "怎么理解", "rag", "agent", "tool calling", "evals"],
+      "regex_patterns": ["什么是", "解释", "原理", "区别", "怎么理解", "what is", "explain", "how does.*work", "difference", "rag", "agent", "tool calling", "evals"],
       "stage_boosts": {"learning": 0.003, "application": 0.001},
       "path_prefix_boosts": {"docs/01-ai-basics/": 0.003, "docs/02-pm-skills/": 0.001}
     }

@@ -15,6 +15,7 @@ PROJECT_ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(PROJECT_ROOT))
 
 from mcp.server.mcpserver import MCPServer  # noqa: E402
+from rag.knowledge_base_config import load_active_knowledge_base  # noqa: E402
 from rag.local_retriever import ALL_STAGES, LocalEvidenceRetriever  # noqa: E402
 
 
@@ -25,11 +26,12 @@ _retriever: LocalEvidenceRetriever | None = None
 def _get_retriever() -> LocalEvidenceRetriever:
     global _retriever
     if _retriever is None:
+        paths = load_active_knowledge_base(PROJECT_ROOT)
         _retriever = LocalEvidenceRetriever(
-            chunks_path=PROJECT_ROOT / "rag/generated/aipm-wiki/chunks.jsonl",
-            embeddings_path=PROJECT_ROOT / "rag/generated/bge-m3/chunk_embeddings.npy",
-            model_cache=PROJECT_ROOT / "rag/models/bge-m3",
-            routing_config=PROJECT_ROOT / "rag/config/intent_routes_v1.json",
+            chunks_path=paths.chunks_path,
+            embeddings_path=paths.embeddings_path,
+            model_cache=paths.model_cache,
+            routing_config=paths.routing_config,
         )
     return _retriever
 
