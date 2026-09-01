@@ -139,13 +139,13 @@ from the repository root:
 
 ```powershell
 python -m pip install -r requirements-rag.txt
-python tools/setup_knowledge_base.py --default-aipm --accept-aipm-license
+python tools/setup_codex_rag.py --default-aipm --accept-aipm-license
 ```
 
 To use documents you are authorized to process instead of the default source:
 
 ```powershell
-python tools/setup_knowledge_base.py `
+python tools/setup_codex_rag.py `
   --custom-source "C:\path\to\my-ai-pm-documents" `
   --source-name "My AI PM notes" `
   --source-id my-ai-pm-notes `
@@ -194,7 +194,7 @@ result row, so they can be reviewed rather than silently steering answers.
 
 ## Rebuild and evaluate
 
-Run `tools/setup_knowledge_base.py` again whenever the selected local source is
+Run `tools/setup_codex_rag.py` again whenever the selected local source is
 changed. The command rebuilds the local corpus and embeddings before selecting it
 for the MCP server. Use the evaluation runners above after that rebuild.
 

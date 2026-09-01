@@ -6,7 +6,7 @@ Codex is the Agent runner. The local MCP server exposes one safe tool,
 retrieve_aipm_evidence. The Codex model decides when source-backed retrieval is
 useful instead of always retrieving before a response.
 
-## Initialize a local knowledge base
+## One guided setup command
 
 From the repository root, install the RAG dependencies in the same Python
 environment that the MCP server will use:
@@ -15,22 +15,26 @@ environment that the MCP server will use:
 python -m pip install -r requirements-rag.txt
 ~~~
 
-For the default AI PM learning library, run the setup command once. It clones
-AIPM-Wiki locally, builds ignored chunks and embeddings, and records the active
-local knowledge-base configuration:
+For the default AI PM learning library, this one command clones AIPM-Wiki
+locally, builds ignored chunks and embeddings, and registers the local MCP
+server with Codex:
 
 ~~~powershell
-python tools/setup_knowledge_base.py --default-aipm --accept-aipm-license
+python tools/setup_codex_rag.py --default-aipm --accept-aipm-license
 ~~~
 
 The optional default source is governed by the third-party notice and its
 CC BY-NC-SA 4.0 conditions. It is not included in this repository.
 
+An Agent may offer to run this command when source-backed guidance is needed,
+but it must ask for permission before accepting the license or changing the
+local Codex MCP configuration. Start a new Codex task after setup.
+
 To build a local index from user-authorized AI PM documents instead, point the
 same command at a folder of Markdown, TXT, PDF, or DOCX files:
 
 ~~~powershell
-python tools/setup_knowledge_base.py --custom-source "C:\path\to\my-ai-pm-documents" --source-name "My AI PM notes" --source-id my-ai-pm-notes --confirm-rights
+python tools/setup_codex_rag.py --custom-source "C:\path\to\my-ai-pm-documents" --source-name "My AI PM notes" --source-id my-ai-pm-notes --confirm-rights
 ~~~
 
 Custom documents remain local. The command replaces only the active local
@@ -43,10 +47,11 @@ knowledge base, not the checked-in Skills or learning rules.
 - The model must ask for missing user experience instead of filling gaps from RAG.
 - It must cite title and source_url whenever it relies on returned evidence.
 
-## Codex configuration
+## Manual Codex configuration
 
-Register this stdio server in the local Codex configuration. Replace both
-placeholder paths with your own Python executable and cloned repository path:
+The guided command above is preferred. Use this section only if you want to
+register the server manually. Replace both placeholder paths with your own
+Python executable and cloned repository path:
 
 ~~~toml
 [mcp_servers.aipm_local_evidence]

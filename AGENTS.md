@@ -20,6 +20,22 @@ it by default.
   `case`, `interview`, or `resources`. An all-corpus search is allowed for a
   cross-stage request or unclear stage.
 
+## First-time local evidence setup
+
+- If source-backed guidance would be useful but `retrieve_aipm_evidence` is not
+  available in the current task, explain that the optional local knowledge base
+  and MCP server have not yet been enabled.
+- Offer to run `tools/setup_codex_rag.py`; before using the default AIPM-Wiki
+  source, obtain explicit user confirmation that they accept the terms in
+  `THIRD_PARTY_NOTICES.md`. Never accept that license or download the source
+  silently.
+- After confirmation, initialize the source and register the MCP server with
+  Codex. Tell the user to start a new task because an already-running task does
+  not gain a newly registered tool.
+- If the user declines setup or the tool remains unavailable, continue with
+  user-provided evidence and Skill rules, clearly distinguishing that from
+  source-backed external evidence.
+
 ## Evidence boundary
 
 - Local AIPM Wiki material is background evidence, never evidence of the
