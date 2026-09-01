@@ -7,6 +7,7 @@ Use this as user-verifiable state between career diagnosis, learning planning, a
 - **Target role family:**
 - **Target JD or role evidence:**
 - **Deadline or constraint:**
+- **Selected learning duration:** 14 / 30 / 60 days
 
 ## Usable strengths and domain assets
 

@@ -1,6 +1,6 @@
 # Model Landscape and Project Selection
 
-Use this reference for the post-sprint model-selection extension and whenever the learner asks to compare current models. It defines a teaching and decision process; it does not freeze a fast-changing vendor ranking.
+Use this reference for the core model-capability-map and selection unit, and whenever the learner asks to compare current models. Every selected route includes a scoped version of this unit; it may be an orientation in a short route or a comparative evaluation in a longer route. It complements, but does not replace, the learner's selected RAG, Tool Calling, Agent, or Evals learning. It defines a teaching and decision process; it does not freeze a fast-changing vendor ranking.
 
 ## What must be compared first
 

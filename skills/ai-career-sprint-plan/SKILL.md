@@ -1,109 +1,145 @@
 ---
 name: ai-career-sprint-plan
-description: Plan a personalized AI-career learning sprint from a verified Learning Handoff or available learner profile, with a choice between AI-mainline-only, product-foundation-first, or parallel tracks. Use when a user asks for a learning plan, study schedule, 10-day sprint, or learning roadmap for AI product design, AI UX/UI, AI experience design, AI application product, agent design, or related AI roles.
+description: Plan a personalized 14-, 30-, or 60-day transition route for AI-product roles. Diagnose product and AI foundations separately, then choose an AI bridge, dual-foundation, or product-repair learning mode.
 ---
 
 # AI Career Sprint Planner
 
-## Scope
+## Purpose
 
-Create the learning route and initialize durable learning state. Do not teach the lessons, force a project, or turn the first interaction into a task interview. Actual multi-turn teaching belongs to `adaptive-ai-learning-coach`. Treat the default 10-day route as a connected foundation sprint, not a promise of job readiness.
+Create a personalized learning route and initialize durable state. Do not teach
+the lessons, force a build, or promise job readiness. Daily dialogue teaching
+belongs to `adaptive-ai-learning-coach`.
 
-Read a verified Learning Handoff when available. Otherwise use the accepted diagnosis and relevant learner information: target role, experience, domain assets, AI-specific gaps, prior familiarity, target JD, public-project constraints, learning preferences, and accessibility preferences. Do not repeat the full diagnosis or ask for information already available. If no diagnosis exists, create a provisional route, label its assumptions, and create a provisional handoff for later recalibration.
+Support 14, 30, and 60 learning days. A 14-day route establishes a usable
+framework and evidence of basic judgement; it is not a complete curriculum for
+both product management and AI engineering.
 
-Read [../adaptive-ai-learning-coach/references/ai-product-learning-architecture.md](../adaptive-ai-learning-coach/references/ai-product-learning-architecture.md) before planning. Use its system model, capability nodes, mastery levels, spiral rules, and integration challenge.
-Read [../adaptive-ai-learning-coach/references/learning-evidence-and-source-policy.md](../adaptive-ai-learning-coach/references/learning-evidence-and-source-policy.md) before setting mastery evidence or selecting source-grounded content.
-Read [../adaptive-ai-learning-coach/references/model-landscape-and-selection.md](../adaptive-ai-learning-coach/references/model-landscape-and-selection.md) when the route includes model selection, provider comparison, or deployment constraints.
+Before planning, read:
 
-## Intake
+- the verified Learning Handoff when available, otherwise the accepted
+  diagnosis and relevant learner information;
+- `../adaptive-ai-learning-coach/references/ai-product-learning-architecture.md`;
+- `../adaptive-ai-learning-coach/references/learning-evidence-and-source-policy.md`;
+- `../adaptive-ai-learning-coach/references/track-bridges.md` when pairing
+  tracks; and
+- `../adaptive-ai-learning-coach/references/model-landscape-and-selection.md`
+  when model selection is included.
 
-Ask only when unknown and material:
+## Intake and foundation diagnosis
 
-1. Is there a deadline or preferred sprint length? Default to 10 learning days.
-2. Which track sequence does the learner prefer?
-   - **Parallel:** each learning day includes an AI-mainline block and a product-foundation block.
-   - **Foundation first:** complete the product foundation before starting the AI mainline.
-   - **AI first:** complete the AI mainline first, then add foundations.
+Use available evidence before asking questions. Ask only when a missing answer
+changes the route:
 
-Study hours are optional calibration information, never a prerequisite to starting. If unknown, use flexible blocks rather than demanding an estimate.
+1. deadline or route length: 14, 30, or 60 days;
+2. target role or target JD, when known;
+3. product-foundation evidence: problem framing, user research, requirement
+   scope, flows, metrics, experiments, or delivery decisions;
+4. AI-foundation evidence: model boundary, context, retrieval, tools, state,
+   safety, or evaluation decisions; and
+5. learning preferences or accessibility needs.
 
-## Personalization Rules
+Do not infer product competence from a title or AI competence from using an AI
+tool. Classify each foundation as **emerging**, **working**, or **unassessed**.
+If unassessed, begin provisionally in dual-foundation mode and recalibrate after
+the first two learning units.
 
-- Prioritize capabilities that close the learner's highest-impact, realistically closable gaps for the target role family.
-- Use existing domain knowledge as a teaching bridge and optional application material, without requiring a project narration before learning starts.
-- Adapt depth and application difficulty to demonstrated knowledge. If the learner already understands a module, test its boundary or move forward instead of reteaching definitions.
-- Preserve explicit preferences about language, pace, progress visibility, output mode, and nonlinear exploration.
-- State the personalization basis briefly: `Built from: [target + strengths + priority gaps + learning preferences]`.
-- Start with an anchor scenario. Use the learner's domain only when it helps; otherwise use a neutral service-change scenario. The learner should revisit this scenario as the system model grows.
+## Select a learning mode
 
-## Planning Rules
+| Mode | Foundation profile | What the learner receives |
+|---|---|---|
+| **AI bridge** | Product working; AI emerging. | AI-mainline route with a concise product bridge each day. |
+| **Dual foundation** | Product emerging, AI emerging, or both unassessed. | Two visible daily blocks: product foundation and AI mainline, connected through one product decision. |
+| **Product repair** | AI working; product emerging. | Product-first route with an explicit AI application bridge. |
 
-- Keep two independently visible tracks when foundations are included:
-  - **AI mainline:** AI-specific capability; this alone advances `Day N / 10`.
-  - **Product foundation:** problem framing, hypotheses, research, metrics, decision tables, and related product skills; it has separate progress and never silently consumes an AI day.
-- Keep the tracks distinct for progress but connect them deliberately. For every AI module, name the related product foundation and explain both directions: how the foundation makes the AI decision useful or safe, and how AI changes the product-design question.
-- For every AI module, state the **AI-specific delta** before teaching: the model/retrieval/tool/state mechanism, failure mode, or responsibility that generic product practice alone does not cover. If no AI-specific delta exists, place the topic on the product-foundation track rather than consuming an AI-mainline day.
-- In Parallel mode, pair each AI block with its most relevant foundation block. In sequential modes, retain the bridge note for the later handoff. Read [../adaptive-ai-learning-coach/references/track-bridges.md](../adaptive-ai-learning-coach/references/track-bridges.md) when selecting pairs.
-- Default AI mainline foundation sprint:
-  1. System anatomy and anchor scenario.
-  2. Model behavior versus deterministic rules and human decisions.
-  3. Context, prompting, and structured output.
-  4. Knowledge, source of truth, retrieval, freshness, and permissions.
-  5. Tools, APIs, backend revalidation, and execution boundaries.
-  6. State, routing, retries, idempotency, and human handoff.
-  7. AI UX, user control, recovery, and safety.
-  8. AI Evals and observability: distinguish deterministic QA and product metrics from evaluation of model, retrieval, tool-selection, and output behavior; use traces to locate live multi-component failures.
-  9. Rebuild the anchor scenario as one AI system and defend the component choices, AI-specific failure modes, evaluation plan, and operational trade-offs.
-  10. Solve an unseen AI transfer scenario and select the next evidence-building step from demonstrated gaps.
-- Add **Extension A — Model capability map and project selection** by default after the 10-day foundation sprint. It is a connected follow-up module, not a retroactive replacement for any AI-mainline day. It has three sessions:
-  1. **Capability map:** compare current model families horizontally (across providers) and vertically (flagship, balanced/fast, and specialist models within a provider). Start with concrete task categories: reasoning, coding/Agent work, long-context work, creativity, multimodal understanding/generation, voice, retrieval/reranking, and image/video/3D. Distinguish a general-purpose model, a specialist model, and a specialist Agent. Treat claims such as "more creative" or "more stable at code" as task- and version-specific hypotheses, not universal facts.
-  2. **Production fit:** select candidates using task modality, quality and safety requirements, latency, context/output limits, Tool Calling and structured-output support, version maturity, availability, rate limits, regional/data-processing constraints, pricing unit, and ecosystem/operational fit. Explain what each factor changes in the product design.
-  3. **Evidence-based choice:** design a small task-representative evaluation, compare quality/safety/P95 latency/cost, set hard constraints, then define routing, fallback, and a re-evaluation trigger when the model version or task changes.
-- For Extension A, label each statement as one of: **current official product fact**, **learner or operator observation**, or **evaluation result**. Verify dynamic provider facts on the day of teaching from official sources. Do not replace the requested cross-model map with a generic cost-and-configuration checklist.
-- For every day, name: introduced capability nodes, revisited nodes, mastery target, product-foundation bridge, and one system-map update.
-- For every day, define one observable procedural outcome in the form `when [cue], choose [action], because [mechanism]; except when [boundary]`. Use the procedure loop in the source policy; do not use term recall as the completion criterion.
-- Use the same anchor scenario for connection, but use fresh scenarios to verify transfer. Do not treat a correct answer on the anchor alone as mastery.
-- For each relevant node, proactively teach a visible 1–3 term packet: English name/full name or acronym, plain definition, system position, distinction, decision link, and AI-specific link. Immediately teach the mechanism and boundary that make those terms matter in the scenario before asking an application that relies on them. Add the matching deep-mechanism branch when the learner asks why it works, the target role needs it, or an application reveals a mechanism-level gap. Do not make prior familiarity with a term a prerequisite for learning it, but do require use of the term in a decision explanation before marking the node oriented.
-- Allow side questions to deepen a topic without advancing the day counter until that day's outcome is met.
-- Treat a real project, case, or prototype as an optional laboratory after the relevant concept is understood.
-- Use scenario-based applications, not definition drills.
+For a learner with two emerging foundations, recommend 30 days. If they choose
+14 days, create a **dual-foundation starter**: cover the highest-leverage
+foundations, label deeper topics as deferred, and state that the route provides
+orientation and practice rather than full professional competence.
+
+## Planning rules
+
+1. Select topics from the learner's target role, evidence, highest-impact gap,
+   usable domain experience, and timebox. Show both **selected** and
+   **deferred** topics with a reason. Do not schedule every library topic by
+   default.
+2. Treat the five AI topic pools as the available library: model capability map
+   and selection, RAG, Tool Calling, Agent, and Evals. Add system anatomy,
+   context/output, AI UX/safety, observability, and integration only where they
+   make a selected capability usable.
+3. Keep progress separate:
+   - **AI mainline** contains AI-specific capability and advances the AI-day
+     counter.
+   - **Product foundation** contains product framing, research, requirements,
+     journeys, metrics, experiments, and delivery practices.
+4. In Dual foundation mode, schedule one named outcome for each track every
+   day. Pair them through a two-way bridge: how the product practice makes the
+   AI decision useful or safe, and how AI changes the product practice.
+5. Every active daily unit must name: capability, observable outcome,
+   AI-specific delta or product decision, 1–3 key terms, familiar application,
+   independent transfer check, and done condition.
+6. The familiar project is a teaching anchor, not completion evidence. A
+   different-domain or different-task-context scenario is required before
+   recording Level 3 or above or advancing that unit.
+7. For emerging foundations, retain the required knowledge card: terms, plain
+   mechanism, boundary, and example. Adaptive pacing may skip optional depth,
+   not these core elements.
+8. Include one model capability map and selection unit in every selected route.
+   In 14 days teach task categories and a role-relevant selection method; in 30
+   or 60 days add representative evaluation, routing, fallback, and
+   re-evaluation design. Verify dynamic provider facts from current official
+   sources on the day of teaching.
+9. Do not let generic product material consume an AI-mainline day. Preserve the
+   named bridge between tracks. A real case, prototype, or build is optional
+   laboratory work after the relevant concepts are understood.
+
+## Minimum dual-foundation starter coverage
+
+When the learner selects 14 days with two emerging foundations, use this as a
+planning spine, then adapt the examples and order:
+
+| Product foundation | AI mainline |
+|---|---|
+| User problem, target user, and success hypothesis | System anatomy and model boundary |
+| Evidence, assumptions, and requirement scope | Context, prompts, and structured output |
+| User flow and decision table | Model capability categories and selection |
+| Source of truth and information architecture | RAG need, retrieval boundary, freshness |
+| Service recovery and operational ownership | Tool Calling, Agent state, retries, handoff |
+| Metrics, experiments, and release decisions | Evals, observability, AI UX, safety |
+
+Use the remaining days for spaced review, role-relevant cases, independent
+transfer, a target-JD evidence map, and one unseen integration challenge. Do
+not present this table as exhaustive product or AI training.
 
 ## Output
 
-### User-facing output
+Return the route in chat first, then save the accepted plan in one readable
+Markdown file when the workspace is writable. Include:
 
-Return:
+1. selected duration, target role family, foundation profile, and learning mode;
+2. personalization basis and explicit assumptions;
+3. selected and deferred topics;
+4. a two-track map, including which progress counter each item changes;
+5. for every planned day:
 
-1. Sprint scope, target role family, and chosen track sequence.
-2. Personalization basis: target, usable strengths, priority gaps, familiarity, and preferences used.
-3. A concise map of both tracks, marking what counts toward the AI-mainline total and the bridge between tracks.
-4. For each AI day:
+   ```markdown
+   ### Day N — [mode]
+   **Product foundation unit:** outcome, key terms, and done condition
+   **AI mainline unit:** outcome, AI-specific delta, key terms, and done condition
+   **Bridge:** the shared product decision
+   **Anchor application:**
+   **Independent transfer check:**
+   **System-map update:**
+   **Optional deepening:**
+   ```
 
-```markdown
-### Day N — [AI mainline topic]
-**Why it matters:**
-**Main outcome:**
-**Capability nodes:** [introduced + revisited]
-**AI-specific delta:** [what this adds beyond the paired product-foundation topic]
-**Key terms:** [1–3 terms: name + plain definition + decision link]
-**Mastery target:** [0–5 level and observable evidence]
-**Procedural outcome:** When [cue], choose [action], because [mechanism]; except when [boundary].
-**Product connection:**
-**System-map update:**
-**Aha check or transfer prompt:**
-**Dialogue sequence:** scenario cue → optional baseline intuition → term packet → mechanism + boundary → decision → feedback → variation
-**Product-foundation block:** [topic or queued]
-**Done when:**
-```
+   In AI bridge or product repair mode, mark the lighter track as a bridge
+   rather than inventing a full unit.
 
-5. When Extension A is included, add a separate three-session card with: capability categories compared, evidence class for each conclusion, candidate models or model families, hard constraints, evaluation cases and metrics, routing/fallback choice, and next re-evaluation trigger. Keep its progress separate from `Day N / 10`.
+6. initial durable-state fields: foundation profile, mode, both-track progress,
+   mastery evidence, review points, anchor scenario, and next action; and
+7. a handoff to `adaptive-ai-learning-coach`.
 
-6. An anchor scenario and initial system map.
-7. A learning-state initialization section with mastery levels and review points.
-8. One handoff to `adaptive-ai-learning-coach`.
-
-Present the route in chat first. When the learner selects `Chat-first + milestone Markdown` or `Document-first`, use the matching-language [English system map](templates/en/learning-system-map.md) or [Chinese system map](templates/zh-CN/learning-system-map.md) inside one editable sprint-plan file after the route is accepted. If the host has no writable workspace, return one clearly named Markdown block for the learner to copy and retain. Do not create a separate file for every lesson. Use a compact table or progress card for track comparison; use a diagram only when it clarifies cross-track dependencies.
-
-### State for the next Skill
-
-Save or update a workspace learning state when possible. Otherwise return a named, copyable learning-state Markdown block. Show it briefly to the learner, then make it available to `adaptive-ai-learning-coach`. Include only: verified Learning Handoff summary, anchor scenario, system map, selected track sequence, AI-mainline and foundation maps/progress, mastery level and evidence for each relevant node, review points, active day, branch status, completed outcomes, unresolved questions, and one next step. Do not pass the full diagnosis or raw conversation by default.
+When the learner selects Chat-first plus milestone Markdown or Document-first,
+use the matching existing system-map template in a single editable sprint-plan
+file after the route is accepted. Do not create a file per lesson.

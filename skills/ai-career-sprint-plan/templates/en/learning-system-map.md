@@ -1,5 +1,12 @@
 # AI Product Learning System Map
 
+## Timebox and phase
+
+- **Selected duration:** 14 / 30 / 60 days
+- **Current phase:**
+- **AI mainline progress:** Day N / selected duration
+- **Product-foundation progress:**
+
 ## Anchor scenario
 
 **User request:**

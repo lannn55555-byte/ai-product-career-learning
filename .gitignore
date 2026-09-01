@@ -1,9 +1,13 @@
 # Private learner material
 *_Resume.*
 *_CV.*
+*Resume*.pdf
+*CV*.pdf
 *Learning_Log*.md
 *Growth_Profile*.md
 *Handoff.private.md
+state/*.md
+profile/
 
 # Credentials and local settings
 .env
@@ -11,6 +15,15 @@
 *.key
 *.pem
 secrets/
+
+# Locally generated third-party RAG corpus (rebuild from source; do not publish)
+rag/generated/
+rag/.venv*/
+rag/models/
+
+# Python runtime artifacts
+__pycache__/
+*.py[cod]
 
 # Editor and operating-system files
 .DS_Store

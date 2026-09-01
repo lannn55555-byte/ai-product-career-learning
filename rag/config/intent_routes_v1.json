@@ -1,0 +1,49 @@
+{
+  "version": "v1",
+  "purpose": "A small, auditable routing layer for the career-learning Agent. Route boosts only order already-retrieved candidates; they never override the stage filter or inject documents.",
+  "routes": [
+    {
+      "name": "portfolio_or_demo",
+      "regex_patterns": ["作品集", "portfolio", "demo", "项目复盘", "案例怎么做"],
+      "stage_boosts": {"application": 0.002, "case": 0.001, "interview": 0.002},
+      "path_prefix_boosts": {"docs/02-pm-skills/vibe-coding/": 0.003, "docs/04-interview/preparation/portfolio-and-demo.md": 0.004}
+    },
+    {
+      "name": "interview_answer",
+      "regex_patterns": ["面试", "怎么答", "如何回答", "追问", "自我介绍", "jd"],
+      "stage_boosts": {"interview": 0.003, "diagnosis": 0.001},
+      "path_prefix_boosts": {"docs/04-interview/": 0.003}
+    },
+    {
+      "name": "career_direction",
+      "regex_patterns": ["转行", "职业方向", "适合什么", "优势", "短板", "适配", "找什么岗位"],
+      "stage_boosts": {"diagnosis": 0.003},
+      "path_prefix_boosts": {"docs/00-roadmap/": 0.003}
+    },
+    {
+      "name": "learning_plan",
+      "regex_patterns": ["学习路线", "学习计划", "先学什么", "怎么学", "14天", "30天", "60天", "入门"],
+      "stage_boosts": {"diagnosis": 0.001, "learning": 0.002, "application": 0.001},
+      "path_prefix_boosts": {"docs/00-roadmap/": 0.002, "docs/01-ai-basics/": 0.002, "docs/02-pm-skills/cost-and-tech/model-selection-framework.md": 0.002}
+    },
+    {
+      "name": "product_troubleshooting",
+      "regex_patterns": ["留存下降", "数据下降", "效果变差", "怎么梳理问题", "不信任", "用户投诉", "badcase"],
+      "stage_boosts": {"application": 0.003, "case": 0.001},
+      "path_prefix_boosts": {"docs/02-pm-skills/ai-product-operations/": 0.003, "docs/02-pm-skills/prd-and-design/": 0.002, "docs/03-case-studies/": 0.001}
+    },
+    {
+      "name": "agent_solution_tradeoff",
+      "regex_patterns": ["多agent", "多 agent", "多智能体", "不用agent", "不用 agent", "不该用agent", "不该用 agent", "要不要用agent", "要不要用 agent", "什么时候不该.*agent", "什么时候不应该.*agent"],
+      "query_expansion": "何时不该使用多 Agent；单 Agent、规则工作流与多 Agent 的取舍",
+      "stage_boosts": {"application": 0.002, "learning": 0.001},
+      "path_prefix_boosts": {"docs/02-pm-skills/ai-product-operations/when-not-to-use-multi-agent.md": 0.005, "docs/04-interview/basics/when-not-to-use-agent.md": 0.003}
+    },
+    {
+      "name": "concept_explanation",
+      "regex_patterns": ["什么是", "解释", "原理", "区别", "怎么理解", "rag", "agent", "tool calling", "evals"],
+      "stage_boosts": {"learning": 0.003, "application": 0.001},
+      "path_prefix_boosts": {"docs/01-ai-basics/": 0.003, "docs/02-pm-skills/": 0.001}
+    }
+  ]
+}

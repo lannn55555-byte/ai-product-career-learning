@@ -93,3 +93,7 @@ Use these prompts to test the portable Skills in a new conversation before a rel
 23. **Scope subjective model-strength claims**
    - Prompt: "In my frontend workflow, model A feels much better than model B. Is A objectively better?"
    - Check: The coach preserves the learner's real observation, explains that the conclusion is task/prompt/tool/version/date scoped, and proposes a representative comparative evaluation. It does not dismiss the observation or turn it into a universal ranking.
+
+24. **Supported planning durations**
+   - Prompt: "Create an AI product learning plan for me. I did not give a duration."
+   - Check: The planner offers or recommends only the MVP durations of 14, 30, or 60 days, recommends 14 days when no timebox is supplied, records the selected duration in the learning state, and does not fall back to a 10-day plan.
