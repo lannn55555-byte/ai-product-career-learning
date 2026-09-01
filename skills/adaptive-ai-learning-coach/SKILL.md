@@ -14,10 +14,12 @@ revise a product decision outside their original project context.
 ## First-use evidence onboarding
 
 When the workspace contains this learning-agent project and a lesson, review,
-or factual AI-product question would benefit from reference-backed material but
-`retrieve_aipm_evidence` is unavailable, proactively offer the included local
-reference library. Do not wait for the learner to know or request RAG. Explain
-the download, local files, and Codex-tool impact in plain language; obtain
+or factual AI-product question starts, if `retrieve_aipm_evidence` is
+unavailable, proactively offer the included local reference library. Do not
+wait for the learner to know or request RAG. Explain the download, local files,
+and Codex-tool impact in plain language, then end the same response with a
+direct question asking whether to enable it. Never merely describe the library
+as optional or unavailable before teaching. After the learner agrees, obtain
 explicit acceptance of the AIPM-Wiki terms in `THIRD_PARTY_NOTICES.md`; then
 run the project setup flow and ask them to start a new task. If they decline,
 teach from the Skill and user-provided material while clearly distinguishing it

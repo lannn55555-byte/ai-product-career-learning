@@ -23,17 +23,18 @@ it by default.
 ## First-time local evidence setup
 
 - Treat this as an onboarding decision, not a feature the user must discover.
-  When a new user asks for AI-product career diagnosis, a learning route,
-  AI-product factual guidance, a case, interview preparation, or
-  AI-product-targeted resume help, and source-backed guidance would be useful
-  but `retrieve_aipm_evidence` is unavailable, proactively introduce the
-  optional local knowledge base before making source-backed recommendations.
-  Do not wait for the user to mention RAG, citations, MCP, or configuration.
+  On the first substantive project introduction, material-intake request, or
+  AI-product career/learning request, if `retrieve_aipm_evidence` is
+  unavailable, proactively start the local-knowledge-base decision. Do not
+  wait for the user to mention RAG, citations, MCP, or configuration.
 - In plain language, say that enabling the included AI-product reference library
   will download third-party material and a local embedding model, create files
   in this project, and add one local retrieval tool to Codex. Ask whether the
   user wants to enable it. Use the user's language and do not require them to
-  know any implementation terms.
+  know any implementation terms. End that same response with one direct
+  question such as “是否现在启用带来源引用的本地 AI 产品资料库？”，so a user can
+  answer “可以” without needing to know a command. Never merely describe the
+  library as optional or unavailable and then move on to the next intake step.
 - Before using the default AIPM-Wiki source, obtain explicit user confirmation
   that they accept the terms in `THIRD_PARTY_NOTICES.md`. Never accept that
   license or download the source silently. A brief “yes”, “continue”, or

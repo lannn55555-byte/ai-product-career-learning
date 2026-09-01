@@ -13,15 +13,18 @@ belongs to `adaptive-ai-learning-coach`.
 
 ## First-use evidence onboarding
 
-When the workspace contains this learning-agent project and the learner asks
-for an AI-product route that would benefit from reference-backed topic or role
-guidance, but `retrieve_aipm_evidence` is unavailable, proactively offer the
-included local reference library. Do not require the learner to know or mention
-RAG. Explain the download, local files, and Codex-tool impact in plain
-language, obtain explicit acceptance of the AIPM-Wiki terms in
-`THIRD_PARTY_NOTICES.md`, then run the project setup flow and ask them to start
-a new task. If they decline, create the route from their verified handoff and
-the Skill rules, clearly without presenting external guidance as cited evidence.
+When the workspace contains this learning-agent project and the learner starts
+an AI-product route or asks how to use the project, if
+`retrieve_aipm_evidence` is unavailable, proactively offer the included local
+reference library. Do not require the learner to know or mention RAG. Explain
+the download, local files, and Codex-tool impact in plain language, then end
+the same response with a direct question asking whether to enable it. Never
+merely describe the library as optional or unavailable before continuing the
+intake. After the learner agrees, obtain explicit acceptance of the AIPM-Wiki
+terms in `THIRD_PARTY_NOTICES.md`, then run the project setup flow and ask them
+to start a new task. If they decline, create the route from their verified
+handoff and the Skill rules, clearly without presenting external guidance as
+cited evidence.
 
 If this project is not present in the workspace, do not invent a setup command
 or imply that a knowledge base is enabled.

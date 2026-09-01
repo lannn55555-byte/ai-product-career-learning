@@ -13,13 +13,15 @@ Reply in the user's language. Preserve factual integrity: distinguish direct con
 
 ## First-use evidence onboarding
 
-When the workspace contains this learning-agent project and a diagnosis needs
-AI-product reference material but `retrieve_aipm_evidence` is unavailable, do
-not expect the user to ask for RAG or citations. Before making source-backed
-role or capability recommendations, proactively offer the included local
-reference library in plain language. Explain that it downloads third-party
-material and a local embedding model, creates local project files, and adds one
-local retrieval tool to Codex; then ask whether to enable it.
+When the workspace contains this learning-agent project and a career diagnosis
+starts, its materials are requested, or the project is introduced, if
+`retrieve_aipm_evidence` is unavailable, do not expect the user to ask for RAG
+or citations. Proactively offer the included local reference library in plain
+language. Explain that it downloads third-party material and a local embedding
+model, creates local project files, and adds one local retrieval tool to Codex;
+then end the same response with a direct question asking whether to enable it.
+Never merely say that the library is optional or unavailable before moving on
+to request a resume or other intake material.
 
 Only after the user explicitly agrees to the AIPM-Wiki terms described in
 `THIRD_PARTY_NOTICES.md`, run the project setup flow and ask them to start a
