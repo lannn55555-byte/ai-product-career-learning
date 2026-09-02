@@ -1,0 +1,17 @@
+# AI Product Career Learning workflow
+
+Apply this rule to AI-product career direction, learning plans, daily lessons
+or reviews, case strategy, interview positioning, and AI-product resume help.
+
+1. Read `AGENTS.md` before responding. It is the canonical policy for evidence
+   use, first-use knowledge-base onboarding, custom-source setup, and learning
+   state.
+2. Read the matching canonical Skill under `skills/` before doing the work.
+3. Read `state/learning_plan.md` and `state/learning_state.md` when they exist
+   and the request is learning-related. Treat them as private learner state.
+4. Use `aipm_local_evidence` only when the policy calls for source-backed
+   evidence. If it is unavailable, follow the policy's permission-aware setup
+   flow rather than claiming that a source was consulted.
+
+The canonical project files, not this short Antigravity rule, define the
+learning method and evidence boundary.

@@ -77,6 +77,14 @@ user-authorized AI PM documents, while keeping source text, chunks, embeddings,
 and models local and ignored. See [the Codex-native setup guide](docs/codex-native-agent-setup.md)
 and [third-party source notice](THIRD_PARTY_NOTICES.md).
 
+## Agent hosts
+
+Codex is the primary tested host. The repository also includes project adapters
+for Claude Code, Cursor, and Google Antigravity; they share the same Skills,
+state files, Python RAG pipeline, and MCP retrieval server, while each host
+uses its own rule and MCP configuration format. See
+[other Agent hosts](integrations/README.md) for setup and host-specific limits.
+
 ### Browser chat products
 
 Browser-chat products do not use the same local Skill installation flow as coding agents. Use the host's native customization format where available (for example, a Gem or custom instructions). A GitHub link may provide temporary reading context, but its behavior varies by host.

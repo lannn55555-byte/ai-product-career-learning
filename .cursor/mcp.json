@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "aipm_local_evidence": {
+      "type": "stdio",
+      "command": "python",
+      "args": [
+        "${workspaceFolder}/mcp_server/aipm_retrieval_server.py"
+      ],
+      "cwd": "${workspaceFolder}"
+    }
+  }
+}

@@ -40,9 +40,12 @@ it by default.
   license or download the source silently. A brief “yes”, “continue”, or
   equivalent is sufficient only after the terms and impact have been explained.
 - After confirmation, install `requirements-rag.txt` in the same Python
-  environment that will run the MCP server, then initialize the source and
-  register the MCP server with Codex. Tell the user to start a new task because
-  an already-running task does not gain a newly registered tool.
+  environment that will run the MCP server. In Codex, initialize the source
+  with `tools/setup_codex_rag.py` so it also registers the Codex MCP server.
+  In Claude Code, Cursor, or Antigravity, initialize the source with
+  `tools/setup_knowledge_base.py`; their checked-in host adapter already
+  defines the project MCP server. Tell the user to start a new task/session
+  because an already-running session may not gain a newly configured tool.
 - If the user declines setup or the tool remains unavailable, continue with
   user-provided evidence and Skill rules, clearly distinguishing that from
   source-backed external evidence.
@@ -62,10 +65,13 @@ it by default.
   yet supplied a folder, tell them where to put the files and what formats are
   supported.
 - After the user confirms rights, use `tools/setup_codex_rag.py --custom-source`
-  for first-time setup. If the MCP retrieval server is already registered, use
-  `tools/setup_knowledge_base.py --custom-source` to rebuild the active local
-  index without unnecessarily replacing the Codex server configuration. Ask the
-  user to start a new task after changing the active knowledge base.
+  only for first-time Codex setup. In Claude Code, Cursor, or Antigravity, use
+  `tools/setup_knowledge_base.py --custom-source`, because their project
+  adapter already defines the MCP server. If Codex already has the retrieval
+  server registered, use `tools/setup_knowledge_base.py --custom-source` to
+  rebuild the active local index without unnecessarily replacing its
+  configuration. Ask the user to start a new task after changing the active
+  knowledge base.
 - Do not claim that later file additions are automatically indexed. Tell the
   user to rerun the same custom-source setup after changing that folder.
 
