@@ -28,6 +28,11 @@ from source-backed claims.
 If this project is not present in the workspace, do not invent a setup command
 or imply that a knowledge base is enabled.
 
+If the learner asks to use their own material, do not default to AIPM-Wiki.
+Follow the project policy for a custom knowledge base: request a local folder
+of Markdown, TXT, PDF, or DOCX files and rights confirmation; explain that it
+becomes the active library rather than merging with the default source.
+
 Use a confirmed sprint plan when available. Otherwise create a provisional
 14-day route and label it provisional. Keep AI-mainline and product-foundation
 progress separate, while making their connection explicit.

@@ -40,6 +40,14 @@ python tools/setup_codex_rag.py --custom-source "C:\path\to\my-ai-pm-documents" 
 Custom documents remain local. The command replaces only the active local
 knowledge base, not the checked-in Skills or learning rules.
 
+When the project Agent is asked in natural language to use the user's own
+material, it should explain this choice and ask for the folder path and rights
+confirmation before running the custom-source flow. It must not treat a chat
+attachment as an indexed source until the user has placed it in a local folder.
+After later adding or changing files in that folder, rerun the custom-source
+setup to rebuild the index; this V1 workflow does not watch folders or merge a
+custom library with the default AIPM-Wiki library.
+
 ## Tool boundary
 
 - The tool only reads the currently initialized local knowledge base.

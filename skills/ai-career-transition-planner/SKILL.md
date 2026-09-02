@@ -30,6 +30,11 @@ role guidance as a framework-based inference rather than cited external
 evidence. If this project is not present in the workspace, do not invent a
 setup command or imply that a knowledge base is enabled.
 
+If the user asks to use their own material, do not default to AIPM-Wiki. Follow
+the project policy for a custom knowledge base: request a local folder of
+Markdown, TXT, PDF, or DOCX files and rights confirmation; explain that it
+becomes the active library rather than merging with the default source.
+
 ## Intake
 
 Use a resume, career profile, work history, project notes, interview feedback, or target JD. Collect or infer:

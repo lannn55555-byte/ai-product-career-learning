@@ -25,6 +25,16 @@ class RagOnboardingPolicyTests(unittest.TestCase):
         self.assertIn("End that same response with one direct", policy)
         self.assertIn("library as optional or unavailable", policy)
 
+    def test_custom_source_onboarding_states_its_real_boundaries(self) -> None:
+        policy = (PROJECT_ROOT / "AGENTS.md").read_text(encoding="utf-8")
+        normalized_policy = " ".join(policy.split())
+        self.assertIn("User-provided knowledge-base setup", policy)
+        self.assertIn("Markdown, TXT, PDF, or DOCX", policy)
+        self.assertIn("does not yet merge", normalized_policy)
+        self.assertIn("right to process the files", policy)
+        self.assertIn("Do not ingest an attachment", policy)
+        self.assertIn("later file additions are automatically indexed", policy)
+
     def test_core_entry_skills_do_not_require_user_to_name_rag(self) -> None:
         for name in CORE_SKILLS:
             skill = (PROJECT_ROOT / "skills" / name / "SKILL.md").read_text(encoding="utf-8")
@@ -34,6 +44,7 @@ class RagOnboardingPolicyTests(unittest.TestCase):
             self.assertIn("direct question asking whether to enable it", skill, name)
             self.assertIn("never merely", normalized_skill, name)
             self.assertIn("do not invent a setup command", normalized_skill, name)
+            self.assertIn("asks to use their own material", normalized_skill, name)
 
 
 if __name__ == "__main__":

@@ -47,6 +47,28 @@ it by default.
   user-provided evidence and Skill rules, clearly distinguishing that from
   source-backed external evidence.
 
+## User-provided knowledge-base setup
+
+- When the user asks to upload, import, replace, or use their own reference
+  material, treat that as a request for a custom knowledge base, not the
+  default AIPM-Wiki source. Explain in plain language that the current version
+  accepts one folder of Markdown, TXT, PDF, or DOCX files; processes it locally
+  into chunks and embeddings; and makes it the active knowledge base. It does
+  not yet merge that material with the default library or watch for later file
+  changes.
+- Ask for the local folder path, a short source name, and confirmation that the
+  user has the right to process the files. Do not ingest an attachment or guess
+  a local path that the user has not placed in the workspace. If they have not
+  yet supplied a folder, tell them where to put the files and what formats are
+  supported.
+- After the user confirms rights, use `tools/setup_codex_rag.py --custom-source`
+  for first-time setup. If the MCP retrieval server is already registered, use
+  `tools/setup_knowledge_base.py --custom-source` to rebuild the active local
+  index without unnecessarily replacing the Codex server configuration. Ask the
+  user to start a new task after changing the active knowledge base.
+- Do not claim that later file additions are automatically indexed. Tell the
+  user to rerun the same custom-source setup after changing that folder.
+
 ## Evidence boundary
 
 - Local AIPM Wiki material is background evidence, never evidence of the

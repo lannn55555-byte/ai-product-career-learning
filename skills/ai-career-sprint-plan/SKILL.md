@@ -29,6 +29,11 @@ cited evidence.
 If this project is not present in the workspace, do not invent a setup command
 or imply that a knowledge base is enabled.
 
+If the learner asks to use their own material, do not default to AIPM-Wiki.
+Follow the project policy for a custom knowledge base: request a local folder
+of Markdown, TXT, PDF, or DOCX files and rights confirmation; explain that it
+becomes the active library rather than merging with the default source.
+
 Support 14, 30, and 60 learning days. A 14-day route establishes a usable
 framework and evidence of basic judgement; it is not a complete curriculum for
 both product management and AI engineering.
